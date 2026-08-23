@@ -1,0 +1,52 @@
+# RecoverAI policy configuration — SPEC.md §9
+# Root cause -> action mapping with guardrail thresholds.
+# An ops team can retune behavior here without touching code.
+
+policies:
+  gateway_timeout:
+    action: retry
+    max_attempts: 2
+    cooldown_hours: 0
+    min_confidence: 0.7
+
+  network_transient:
+    action: retry
+    max_attempts: 2
+    cooldown_hours: 0
+    min_confidence: 0.7
+
+  insufficient_funds:
+    action: delayed_retry
+    max_attempts: 3
+    cooldown_hours: 18
+    min_confidence: 0.7
+
+  authentication_failure:
+    action: recovery_link
+    max_attempts: 1
+    cooldown_hours: 0
+    min_confidence: 0.7
+
+  card_invalid:
+    action: alt_payment_method
+    max_attempts: 1
+    cooldown_hours: 0
+    min_confidence: 0.7
+
+  issuer_outage:
+    action: delayed_retry
+    max_attempts: 2
+    cooldown_hours: 1
+    min_confidence: 0.75
+
+  risk_flag:
+    action: escalate
+    max_attempts: 0
+    cooldown_hours: 0
+    min_confidence: 0.0   # always escalate, never auto-act
+
+# global guardrails (apply regardless of root cause)
+global:
+  low_confidence_threshold: 0.7   # below this -> auto-escalate, overriding LLM's suggestion
+  issuer_outage_escalation_after_failed_retries: 2
+  random_seed: 42

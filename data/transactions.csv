@@ -1,0 +1,801 @@
+transaction_id,amount,currency,payment_method,issuer,failure_code,gateway_response_ms,attempt_count,customer_id_hash,created_at,status,true_root_cause,is_issuer_outage_case,is_ambiguous
+txn_46df26c5ca2c,1616.37,INR,upi,,NSF,375,1,7a8e5d7c011a995c,2026-08-03T14:26:00,failed,insufficient_funds,0,0
+txn_df1d206d0500,43785.04,INR,netbanking,IDFC First,NSF,247,2,7b210d076070594d,2026-08-03T18:45:00,failed,insufficient_funds,0,0
+txn_3d4139d902c7,1973.29,INR,card,IDFC First,NSF,255,1,1df8a0c194c0fe96,2026-08-02T05:28:00,failed,insufficient_funds,0,0
+txn_a0df4da7f783,6090.68,INR,netbanking,HDFC Bank,AUTH_FAILED,325,1,b2ad24ae4c790721,2026-08-01T21:32:00,failed,authentication_failure,0,0
+txn_cb6789f7edfc,42565.36,INR,upi,,UNKNOWN_ERROR,527,1,ef577745d98ecebb,2026-08-01T01:27:00,failed,authentication_failure,0,1
+txn_2f1260d53f2b,18430.83,INR,wallet,,NSF,312,1,9ea536bed8f927b8,2026-08-03T09:21:00,failed,insufficient_funds,0,0
+txn_508d9b2b16d9,36333.85,INR,upi,,DECLINED,5474,1,df81b84b9857774a,2026-08-01T10:45:00,degraded,issuer_outage,0,1
+txn_7d0817392076,18686.57,INR,wallet,,UNKNOWN_ERROR,151,1,3a941105ba0b5099,2026-08-01T18:46:00,failed,insufficient_funds,0,1
+txn_230b07190a0d,42360.26,INR,wallet,,UNKNOWN_ERROR,5521,1,12ead0e3cf1dc9cb,2026-08-03T03:53:00,degraded,gateway_timeout,0,1
+txn_7f8547b73b66,39266.68,INR,wallet,,NSF,213,1,582a3fc1c8db1a72,2026-08-03T14:50:00,failed,insufficient_funds,0,0
+txn_a294b215b318,42359.67,INR,wallet,,NETWORK_ERROR,4953,1,33d2f0169963f298,2026-08-02T15:16:00,degraded,network_transient,0,0
+txn_f7558297771a,13846.3,INR,card,Kotak Mahindra,TIMEOUT,11062,1,3f61abf75f04d88e,2026-08-02T04:22:00,degraded,issuer_outage,0,0
+txn_60d55ea90ec8,35645.4,INR,netbanking,HDFC Bank,DECLINED,5196,1,7931604666798221,2026-08-03T05:34:00,degraded,gateway_timeout,0,1
+txn_03a6f0c08579,36273.53,INR,wallet,,RISK_BLOCK,319,1,c4292d3e2c67f369,2026-08-01T19:06:00,failed,risk_flag,0,0
+txn_5e03baf8919c,17153.81,INR,wallet,,UNKNOWN_ERROR,164,2,6d8472e43458128f,2026-08-03T16:12:00,failed,card_invalid,0,1
+txn_d90a2b35e64e,39860.81,INR,card,IDFC First,DECLINED,225,1,17f43bed57033097,2026-08-02T14:11:00,failed,card_invalid,0,1
+txn_a6e9bf22419c,10418.27,INR,card,Yes Bank,TIMEOUT,4839,1,a1c6ae85d3c24ccd,2026-08-03T02:11:00,degraded,gateway_timeout,0,0
+txn_936a09211891,246.67,INR,wallet,,UNKNOWN_ERROR,235,3,fa10529798092747,2026-08-03T14:07:00,failed,insufficient_funds,0,1
+txn_c75d50b6052d,3808.93,INR,wallet,,NSF,317,1,252674ef81d996a6,2026-08-03T12:21:00,failed,insufficient_funds,0,0
+txn_9c4c19e6054d,17902.0,INR,upi,,AUTH_FAILED,204,3,5a5215a99918a7aa,2026-08-03T16:53:00,failed,authentication_failure,0,0
+txn_b32c77511358,40811.95,INR,wallet,,AUTH_FAILED,273,1,a0df0ca388aaa291,2026-08-02T00:37:00,failed,authentication_failure,0,0
+txn_6af6367b8a06,28743.58,INR,upi,,TIMEOUT,10362,1,d4aff82a15c6f8d3,2026-08-02T22:32:00,degraded,issuer_outage,0,0
+txn_ec04cb6a4f43,19304.31,INR,card,ICICI Bank,CARD_EXPIRED,146,1,37f74d795cf56469,2026-08-03T20:54:00,failed,card_invalid,0,0
+txn_3af6ec2612b8,26593.59,INR,netbanking,ICICI Bank,RISK_BLOCK,268,1,a9ccadda49a72634,2026-08-01T12:21:00,failed,risk_flag,0,0
+txn_adc455b089a3,10040.25,INR,card,HDFC Bank,TIMEOUT,5674,1,e5d885a056b8a781,2026-08-02T04:50:00,degraded,gateway_timeout,0,0
+txn_0be189f13bc2,14228.9,INR,upi,,AUTH_FAILED,302,1,ded2d656a18f6088,2026-08-02T15:40:00,failed,authentication_failure,0,0
+txn_a8d93ec8da02,38166.51,INR,netbanking,HDFC Bank,UNKNOWN_ERROR,389,2,67b7017539b8b306,2026-08-01T07:15:00,failed,authentication_failure,0,1
+txn_d7036c21f5a3,2645.27,INR,upi,,TIMEOUT,8204,1,cd2714373e6721e7,2026-08-01T07:52:00,degraded,gateway_timeout,0,0
+txn_4270f339a2fa,13788.49,INR,wallet,,TIMEOUT,6230,1,6236ee44b918025c,2026-08-03T19:25:00,degraded,gateway_timeout,0,0
+txn_dc1b6cd364ab,5526.91,INR,upi,,NSF,396,1,2face22df9d28147,2026-08-01T11:11:00,failed,insufficient_funds,0,0
+txn_fce6580a29fe,26778.81,INR,netbanking,Axis Bank,CARD_EXPIRED,277,2,a6fd4fcb2d2ffd9b,2026-08-03T16:59:00,failed,card_invalid,0,0
+txn_5293848e7156,42947.28,INR,card,Axis Bank,AUTH_FAILED,492,1,6e1e5ac6f802992d,2026-08-02T19:53:00,failed,authentication_failure,0,0
+txn_427f816782a8,40322.1,INR,netbanking,IDFC First,NSF,295,2,c79ab6b58445ab1e,2026-08-01T16:39:00,failed,insufficient_funds,0,0
+txn_089c2578c012,3858.47,INR,wallet,,CARD_EXPIRED,265,2,9b824d761c0a8a2a,2026-08-01T13:01:00,failed,card_invalid,0,0
+txn_f62d99bc5cb6,4734.13,INR,wallet,ICICI Bank,TIMEOUT,5792,1,67e0f420806496fc,2026-08-02T06:10:00,degraded,issuer_outage,1,0
+txn_4246a293cc31,7985.38,INR,card,IDFC First,NSF,248,1,93c830c3c483013a,2026-08-02T18:41:00,failed,insufficient_funds,0,0
+txn_2bd093329e28,13131.7,INR,card,HDFC Bank,UNKNOWN_ERROR,227,2,31433d5b8f36ece0,2026-08-01T23:59:00,failed,card_invalid,0,1
+txn_6beb62885734,4812.11,INR,upi,,CARD_EXPIRED,207,1,3fda57be0447dfbb,2026-08-01T08:10:00,failed,card_invalid,0,0
+txn_ed064087f2a4,21064.96,INR,upi,,NSF,120,1,43b0ec40c82440c2,2026-08-02T20:02:00,failed,insufficient_funds,0,0
+txn_217163ea0430,24817.37,INR,netbanking,SBI,CARD_EXPIRED,140,2,6d88810a8bfeffc2,2026-08-01T23:46:00,failed,card_invalid,0,0
+txn_94665df2719a,9713.45,INR,card,Kotak Mahindra,DECLINED,6420,1,302c0cdfa9ee5e27,2026-08-01T16:29:00,degraded,issuer_outage,0,1
+txn_080394d9c2e6,20331.36,INR,netbanking,ICICI Bank,AUTH_FAILED,599,1,91ad6cc3f6e83e74,2026-08-02T00:50:00,failed,authentication_failure,0,0
+txn_4f48e9b86324,32825.25,INR,netbanking,Axis Bank,TIMEOUT,8966,3,a1ea0b4d7e6dc468,2026-08-01T15:47:00,degraded,gateway_timeout,0,0
+txn_171778140f97,4453.65,INR,card,Yes Bank,NSF,133,1,7162481cf453d81a,2026-08-02T05:06:00,failed,insufficient_funds,0,0
+txn_64aaccc4dfe9,17276.98,INR,wallet,,TIMEOUT,5327,2,bed9d41b132d62a4,2026-08-01T18:53:00,degraded,gateway_timeout,0,0
+txn_1c0a400422e9,14667.09,INR,wallet,,,340,2,a598b44cfce36f35,2026-08-01T21:53:00,failed,authentication_failure,0,1
+txn_81707ac867a2,39143.29,INR,card,IDFC First,NETWORK_ERROR,4013,1,86614f6a7c70c448,2026-08-02T21:10:00,degraded,network_transient,0,0
+txn_2c9cb8a67189,11447.54,INR,card,HDFC Bank,CARD_EXPIRED,258,1,7dacd94865556746,2026-08-02T05:36:00,failed,card_invalid,0,0
+txn_5f5b5526aa86,33906.61,INR,wallet,,DECLINED,387,2,91096b601a5caaae,2026-08-01T01:12:00,failed,insufficient_funds,0,1
+txn_ea8179b1b109,29574.05,INR,wallet,,TIMEOUT,5056,1,62ec572f44e14a48,2026-08-01T11:34:00,degraded,gateway_timeout,0,0
+txn_65733a255384,28742.03,INR,card,Yes Bank,AUTH_FAILED,303,1,da2d413d013de364,2026-08-02T10:44:00,failed,authentication_failure,0,0
+txn_9090edf30396,5395.16,INR,netbanking,Yes Bank,NSF,172,1,d2f79902aca0d8ca,2026-08-03T09:06:00,failed,insufficient_funds,0,0
+txn_bd3dcc318a1d,21509.63,INR,netbanking,Kotak Mahindra,UNKNOWN_ERROR,251,1,b59c90ab306e9f43,2026-08-03T20:47:00,failed,card_invalid,0,1
+txn_b2c96ae257c1,14007.96,INR,netbanking,SBI,CARD_EXPIRED,101,1,a80f0870c54a03fc,2026-08-01T19:33:00,failed,card_invalid,0,0
+txn_b4e32a1e22d3,29871.13,INR,upi,,UNKNOWN_ERROR,587,1,325faf28907782ee,2026-08-03T12:55:00,failed,authentication_failure,0,1
+txn_bd6f969174bf,38641.83,INR,card,IDFC First,NETWORK_ERROR,2933,1,c2d4296b18be8ab4,2026-08-03T12:29:00,failed,network_transient,0,0
+txn_7b5e04e49d59,34720.25,INR,upi,,NSF,180,1,91c4dfd9efac6eb2,2026-08-02T22:12:00,failed,insufficient_funds,0,0
+txn_456572e8d46c,12572.0,INR,card,ICICI Bank,NSF,383,1,a6655809aa168b03,2026-08-02T14:54:00,failed,insufficient_funds,0,0
+txn_f82e722baf88,6357.61,INR,netbanking,Kotak Mahindra,DECLINED,6046,1,534efae26fa9f378,2026-08-02T17:00:00,degraded,gateway_timeout,0,1
+txn_07946a308e6b,12484.47,INR,netbanking,Axis Bank,NSF,371,1,89f3ee1f791af71d,2026-08-03T21:01:00,failed,insufficient_funds,0,0
+txn_4b1bd5da68bf,13815.4,INR,netbanking,ICICI Bank,,8380,2,d5c88c5d056b9af8,2026-08-03T21:58:00,degraded,issuer_outage,0,1
+txn_ca66d7ea17ef,5033.61,INR,upi,,NSF,182,1,3aaa9f6d4c079540,2026-08-02T00:13:00,failed,insufficient_funds,0,0
+txn_55be939997c0,11651.51,INR,wallet,,TIMEOUT,5752,1,536ab2775fa55087,2026-08-02T13:01:00,degraded,gateway_timeout,0,0
+txn_4ccf2cad5c8f,20625.76,INR,wallet,,UNKNOWN_ERROR,7917,2,2a92749ebf384685,2026-08-01T22:46:00,degraded,gateway_timeout,0,1
+txn_ac4cc48f4344,23221.51,INR,card,ICICI Bank,TIMEOUT,11144,2,00ff1757ccb280e5,2026-08-01T08:05:00,degraded,issuer_outage,0,0
+txn_37f02b163c80,20729.35,INR,wallet,,,9807,2,e334590c6f21ce86,2026-08-03T17:48:00,degraded,issuer_outage,0,1
+txn_398c72a42188,32940.7,INR,netbanking,Yes Bank,TIMEOUT,5525,1,757d749f1cfb3961,2026-08-02T22:01:00,degraded,gateway_timeout,0,0
+txn_8508e774afe7,26837.89,INR,netbanking,Yes Bank,NSF,134,1,d9741464fabdee58,2026-08-03T06:15:00,failed,insufficient_funds,0,0
+txn_f36a6c764f4d,4024.39,INR,wallet,,TIMEOUT,4065,1,090de5864c40f618,2026-08-02T15:48:00,degraded,gateway_timeout,0,0
+txn_08c75da0768a,7728.97,INR,netbanking,Yes Bank,AUTH_FAILED,533,2,a30bf3d55563f033,2026-08-03T03:13:00,failed,authentication_failure,0,0
+txn_dfd32e914238,15803.54,INR,upi,,NSF,116,1,ced030666eeafb1c,2026-08-02T16:44:00,failed,insufficient_funds,0,0
+txn_13704310ad64,34822.12,INR,card,ICICI Bank,TIMEOUT,6907,2,77e946f4b8a596d5,2026-08-02T06:07:00,degraded,issuer_outage,1,0
+txn_16b505c69c65,9600.07,INR,upi,,UNKNOWN_ERROR,7366,1,3020992c684b47db,2026-08-01T05:53:00,degraded,gateway_timeout,0,1
+txn_4b4f5a795b7d,472.65,INR,upi,,UNKNOWN_ERROR,261,1,a8423e1b5283312c,2026-08-01T14:33:00,failed,insufficient_funds,0,1
+txn_89523e7b3f47,5438.97,INR,upi,,DECLINED,515,3,0609f887ed025fbc,2026-08-03T08:31:00,failed,authentication_failure,0,1
+txn_65f227669105,43129.67,INR,card,ICICI Bank,UNKNOWN_ERROR,377,1,9c7435de0a80bf2a,2026-08-02T19:29:00,failed,insufficient_funds,0,1
+txn_b13cce5103e5,20582.95,INR,wallet,,UNKNOWN_ERROR,7854,1,2adfa11bf2954f37,2026-08-02T06:33:00,degraded,gateway_timeout,0,1
+txn_69699c906e43,20149.23,INR,upi,,,340,2,1eb5b7b5846020e5,2026-08-03T13:26:00,failed,risk_flag,0,1
+txn_279d0f7d960b,34621.65,INR,netbanking,ICICI Bank,,5913,1,684b0935f44ccf0f,2026-08-02T06:08:00,degraded,issuer_outage,1,1
+txn_b4d1e9ef0b3d,5593.11,INR,upi,,UNKNOWN_ERROR,271,1,81dba26cde5f3337,2026-08-03T19:27:00,failed,authentication_failure,0,1
+txn_b74846f5d114,4811.12,INR,wallet,,UNKNOWN_ERROR,4590,2,797b029a2108e94d,2026-08-01T20:59:00,degraded,gateway_timeout,0,1
+txn_8280b1d0bb16,18462.07,INR,upi,,TIMEOUT,4371,3,c2f2e91adc765825,2026-08-02T17:33:00,degraded,gateway_timeout,0,0
+txn_ce4926fa9f09,42026.46,INR,netbanking,SBI,TIMEOUT,4998,1,d495680271f8cffc,2026-08-03T03:50:00,degraded,gateway_timeout,0,0
+txn_47820d68d3ec,27838.72,INR,netbanking,Kotak Mahindra,NETWORK_ERROR,4417,1,c8bc0f74421915d5,2026-08-01T18:17:00,degraded,network_transient,0,0
+txn_8db43c0ffa5c,680.13,INR,upi,,CARD_EXPIRED,197,1,a0dca02f10539d82,2026-08-02T20:25:00,failed,card_invalid,0,0
+txn_d5c541641396,18833.92,INR,card,Axis Bank,CARD_EXPIRED,260,1,51563071738df7af,2026-08-02T17:14:00,failed,card_invalid,0,0
+txn_7402b2838edd,26250.71,INR,card,Yes Bank,TIMEOUT,7755,1,e51481523b81ce3a,2026-08-03T00:54:00,degraded,gateway_timeout,0,0
+txn_8bcafa37fe1c,40466.05,INR,wallet,,DECLINED,173,1,76e042998d86d1a0,2026-08-01T21:34:00,failed,card_invalid,0,1
+txn_8b4202b91088,44173.38,INR,upi,,CARD_EXPIRED,126,1,6ebe166acfffa8b6,2026-08-03T17:54:00,failed,card_invalid,0,0
+txn_87775c99aaa8,7751.31,INR,card,SBI,DECLINED,222,1,a64faf29bc232eb4,2026-08-01T21:29:00,failed,insufficient_funds,0,1
+txn_31c6240aa7d6,17950.8,INR,netbanking,Axis Bank,,335,1,64e9835b11898c32,2026-08-02T06:50:00,failed,insufficient_funds,0,1
+txn_da2e96eddf5e,23664.24,INR,card,ICICI Bank,NETWORK_ERROR,2789,2,7025e4c5b1438b40,2026-08-02T03:24:00,failed,network_transient,0,0
+txn_f0f46c1f6158,26782.82,INR,card,HDFC Bank,UNKNOWN_ERROR,3016,1,ff1a71352fe286d4,2026-08-03T00:28:00,degraded,network_transient,0,1
+txn_99849202ca96,20113.24,INR,card,IDFC First,RISK_BLOCK,324,3,a292ec2334a77f4e,2026-08-02T19:38:00,failed,risk_flag,0,0
+txn_b0e4387d3846,1318.92,INR,upi,,DECLINED,115,2,20cf569eb960b1da,2026-08-02T14:21:00,failed,insufficient_funds,0,1
+txn_3550addde24b,38253.99,INR,card,IDFC First,RISK_BLOCK,298,1,6ab02d19eb3e3a2c,2026-08-02T05:02:00,failed,risk_flag,0,0
+txn_968722bae156,5326.98,INR,card,Yes Bank,NSF,383,1,9b14e4e936dfcde7,2026-08-02T14:28:00,failed,insufficient_funds,0,0
+txn_691efca0360d,33000.98,INR,upi,,UNKNOWN_ERROR,138,1,cf863fe906724ad0,2026-08-03T07:59:00,failed,card_invalid,0,1
+txn_fb8164eb2df1,5457.11,INR,upi,,CARD_EXPIRED,206,2,79911dbae9e3d107,2026-08-01T15:28:00,failed,card_invalid,0,0
+txn_9d2b87687ade,22595.89,INR,netbanking,HDFC Bank,AUTH_FAILED,447,1,c1805772cf8df519,2026-08-03T08:47:00,failed,authentication_failure,0,0
+txn_ead5b9dfbc55,13971.4,INR,card,Axis Bank,CARD_EXPIRED,165,2,99976ac3bf9166e0,2026-08-02T05:45:00,failed,card_invalid,0,0
+txn_6e1b1c084a9a,27768.53,INR,netbanking,IDFC First,NSF,231,1,1fb88b02bb0f8e25,2026-08-01T15:13:00,failed,insufficient_funds,0,0
+txn_6ab806e351ac,22770.52,INR,wallet,,NETWORK_ERROR,2612,1,4bbbba4b785bf307,2026-08-02T00:13:00,failed,network_transient,0,0
+txn_8ac8a56309a4,37460.71,INR,netbanking,SBI,TIMEOUT,7708,1,4cf4e56b567936cd,2026-08-01T10:11:00,degraded,gateway_timeout,0,0
+txn_289008536459,26863.05,INR,netbanking,HDFC Bank,AUTH_FAILED,524,1,ac98285fd3275759,2026-08-03T13:30:00,failed,authentication_failure,0,0
+txn_550ae6d94d6d,16236.52,INR,wallet,,TIMEOUT,7260,1,effa78eca37cb642,2026-08-01T16:40:00,degraded,issuer_outage,0,0
+txn_cfda98551d0e,20266.89,INR,wallet,,RISK_BLOCK,246,1,96085f2e579a8e63,2026-08-01T18:09:00,failed,risk_flag,0,0
+txn_1f4e6ba3d2d8,10768.24,INR,netbanking,Axis Bank,NETWORK_ERROR,4237,1,d686fd4850f09988,2026-08-01T04:34:00,degraded,network_transient,0,0
+txn_d3dfd3ef3bcd,41796.22,INR,wallet,,AUTH_FAILED,523,1,7d24bc510113b774,2026-08-03T07:15:00,failed,authentication_failure,0,0
+txn_cf26b73c9897,18979.18,INR,wallet,,NSF,132,1,f1e185fbffbac9f4,2026-08-03T20:14:00,failed,insufficient_funds,0,0
+txn_ea7f005f629b,10262.34,INR,netbanking,IDFC First,DECLINED,170,1,11a6b7b9765b272c,2026-08-02T13:28:00,failed,risk_flag,0,1
+txn_8d01beb69d07,38173.29,INR,wallet,,UNKNOWN_ERROR,355,1,fe482a89acd55950,2026-08-02T17:20:00,failed,insufficient_funds,0,1
+txn_9421b4339616,38727.85,INR,wallet,,NETWORK_ERROR,4552,1,ccd6f06ad013b585,2026-08-03T21:33:00,degraded,network_transient,0,0
+txn_fa92d49857a1,19276.96,INR,netbanking,Kotak Mahindra,,368,1,4507d834901c5a10,2026-08-01T17:59:00,failed,authentication_failure,0,1
+txn_42db132ef6c0,29128.8,INR,card,ICICI Bank,NSF,324,3,5f5a5f8d27d10745,2026-08-03T23:33:00,failed,insufficient_funds,0,0
+txn_e5f1c7d48603,14808.4,INR,upi,,AUTH_FAILED,278,1,d04f4be85b28aeac,2026-08-03T05:38:00,failed,authentication_failure,0,0
+txn_c431a97bf76a,34892.67,INR,wallet,,RISK_BLOCK,261,2,25df2c29f07e9716,2026-08-02T12:38:00,failed,risk_flag,0,0
+txn_c0e0e72ea1d2,25118.81,INR,upi,,NSF,318,1,c2e4dc884e6b7570,2026-08-01T06:24:00,failed,insufficient_funds,0,0
+txn_107013f20bae,10882.49,INR,upi,,,359,1,697e006b21b16b5e,2026-08-03T07:42:00,failed,authentication_failure,0,1
+txn_e8b5306aee6c,31672.73,INR,card,Kotak Mahindra,,314,1,4b65e2698e20cb8c,2026-08-03T04:05:00,failed,risk_flag,0,1
+txn_741ee3cd1798,9734.51,INR,wallet,,TIMEOUT,5390,1,38dfece9d73b5efa,2026-08-02T14:44:00,degraded,gateway_timeout,0,0
+txn_1af6ea770ca7,1932.9,INR,netbanking,SBI,UNKNOWN_ERROR,225,1,dd3e78cd0a779693,2026-08-01T21:26:00,failed,card_invalid,0,1
+txn_7f90a466b1e2,25950.18,INR,card,ICICI Bank,DECLINED,210,1,e6a7414839898278,2026-08-03T05:50:00,failed,card_invalid,0,1
+txn_d6164f4f6507,23425.53,INR,wallet,,NSF,242,1,76f205509c25afab,2026-08-03T11:30:00,failed,insufficient_funds,0,0
+txn_e3ff3d0cce68,999.34,INR,netbanking,Axis Bank,NSF,177,1,6331296df5a1b69a,2026-08-02T03:50:00,failed,insufficient_funds,0,0
+txn_96f0e7288c58,44806.88,INR,upi,,DECLINED,6472,1,5fcef54312811168,2026-08-02T13:24:00,degraded,gateway_timeout,0,1
+txn_9f590c247a04,26069.65,INR,upi,,TIMEOUT,5267,1,78f7e532955da88a,2026-08-02T06:37:00,degraded,gateway_timeout,0,0
+txn_11998f82d0d4,19123.29,INR,wallet,,AUTH_FAILED,525,1,e52cae7dc3e58cb8,2026-08-01T23:39:00,failed,authentication_failure,0,0
+txn_2f5305ee4d76,27936.68,INR,netbanking,Kotak Mahindra,TIMEOUT,5813,1,6debefbcc3e426cb,2026-08-03T15:23:00,degraded,gateway_timeout,0,0
+txn_a56fe95e14c8,7233.66,INR,wallet,,TIMEOUT,8911,1,3346dee902b75d98,2026-08-02T15:13:00,degraded,issuer_outage,0,0
+txn_4db1c3848d5f,20301.43,INR,card,HDFC Bank,NETWORK_ERROR,3389,1,7e44df9874756bfd,2026-08-01T05:50:00,degraded,network_transient,0,0
+txn_c9dfcc896775,37224.41,INR,card,HDFC Bank,RISK_BLOCK,192,2,3d331a1fe8e4b236,2026-08-02T15:24:00,failed,risk_flag,0,0
+txn_a5f49022f53e,9592.38,INR,netbanking,SBI,TIMEOUT,7281,1,f2e2c7b71b57f912,2026-08-02T00:33:00,degraded,gateway_timeout,0,0
+txn_4ea3b97ca1db,33955.99,INR,netbanking,SBI,DECLINED,398,2,6d267337379829d1,2026-08-01T01:33:00,failed,insufficient_funds,0,1
+txn_673fbb1e7d6f,30871.84,INR,netbanking,Axis Bank,NETWORK_ERROR,2298,1,291227c625597c8a,2026-08-01T21:34:00,failed,network_transient,0,0
+txn_3ba31a806841,37502.82,INR,netbanking,IDFC First,,158,1,ee84feafe7bb7d54,2026-08-03T00:06:00,failed,card_invalid,0,1
+txn_b141a2204046,4655.86,INR,card,Kotak Mahindra,NSF,296,1,844f1bbc9ad42290,2026-08-03T10:37:00,failed,insufficient_funds,0,0
+txn_50de28f0814b,17886.17,INR,wallet,,AUTH_FAILED,599,2,450104beee3869d4,2026-08-03T01:35:00,failed,authentication_failure,0,0
+txn_2512a4af015f,30800.06,INR,upi,,UNKNOWN_ERROR,11876,1,68d9df7bf0072cf2,2026-08-02T16:17:00,degraded,issuer_outage,0,1
+txn_b4173229bff0,36947.33,INR,upi,,UNKNOWN_ERROR,4552,1,27ed8512d065acf9,2026-08-02T12:06:00,degraded,network_transient,0,1
+txn_ebf2d4a504de,22364.8,INR,card,Kotak Mahindra,CARD_EXPIRED,129,1,f2cb465ea4ba2f30,2026-08-03T02:05:00,failed,card_invalid,0,0
+txn_199a970f70dd,1852.67,INR,card,ICICI Bank,UNKNOWN_ERROR,212,1,69c6a654fc92a835,2026-08-03T17:15:00,failed,insufficient_funds,0,1
+txn_076e25436e3a,1989.64,INR,netbanking,IDFC First,CARD_EXPIRED,210,1,9f879a4cf0440bbc,2026-08-02T13:13:00,failed,card_invalid,0,0
+txn_38341a20d0bc,34937.08,INR,upi,,TIMEOUT,6719,2,4520c14e2a5487d3,2026-08-02T23:52:00,degraded,issuer_outage,0,0
+txn_d3c2dcc6ece1,34435.29,INR,upi,,UNKNOWN_ERROR,367,1,b06123e4c1c60b2f,2026-08-03T12:26:00,failed,insufficient_funds,0,1
+txn_eb9decbaf128,1900.79,INR,card,HDFC Bank,AUTH_FAILED,446,1,f02466cb55bc4edf,2026-08-01T00:09:00,failed,authentication_failure,0,0
+txn_a1c4eee8cef7,14296.45,INR,netbanking,Axis Bank,,5498,3,bb45887014fa0a62,2026-08-03T21:47:00,degraded,gateway_timeout,0,1
+txn_4e1b4845b3f7,27686.39,INR,card,Axis Bank,UNKNOWN_ERROR,6121,1,4065c86dbf5c5a7b,2026-08-01T09:57:00,degraded,gateway_timeout,0,1
+txn_e36efa1799b9,18903.34,INR,upi,,,3341,3,d7c6a0f779004b71,2026-08-02T18:41:00,degraded,network_transient,0,1
+txn_59c9a5a8aeee,13717.89,INR,card,Yes Bank,AUTH_FAILED,483,1,fdf3dd7bbaeb82cd,2026-08-01T14:08:00,failed,authentication_failure,0,0
+txn_e235d9dac596,2551.98,INR,netbanking,ICICI Bank,TIMEOUT,5556,1,5db6d3f99d2318a1,2026-08-02T12:13:00,degraded,gateway_timeout,0,0
+txn_ed7934f7644f,3791.26,INR,upi,,DECLINED,188,1,2e01c3cc25e1c190,2026-08-01T21:22:00,failed,insufficient_funds,0,1
+txn_0d4704f0a288,6442.3,INR,netbanking,IDFC First,TIMEOUT,7694,1,8113073f397b9bf4,2026-08-03T01:01:00,degraded,gateway_timeout,0,0
+txn_d3a6d1c6ae52,24273.43,INR,card,Kotak Mahindra,DECLINED,298,1,3d9ecafdbd66d5a8,2026-08-01T06:43:00,failed,insufficient_funds,0,1
+txn_9d5ea0c08382,41117.34,INR,wallet,,TIMEOUT,7162,3,f4d0bcde740eccff,2026-08-01T20:46:00,degraded,gateway_timeout,0,0
+txn_53e798951d09,16827.19,INR,upi,,NSF,126,1,7ddae7abf6a9776e,2026-08-02T17:42:00,failed,insufficient_funds,0,0
+txn_a3d179928708,34691.08,INR,card,ICICI Bank,NSF,154,1,ac2ce85f4e874aef,2026-08-03T15:37:00,failed,insufficient_funds,0,0
+txn_4a20c65fbcd9,31570.15,INR,upi,,NSF,388,3,a6a3ffb5d11311b0,2026-08-03T19:12:00,failed,insufficient_funds,0,0
+txn_a7bc9122e1d1,5809.44,INR,wallet,,UNKNOWN_ERROR,2320,3,b1b84c82093105ee,2026-08-03T11:26:00,failed,network_transient,0,1
+txn_1a6caad9460e,2990.62,INR,netbanking,HDFC Bank,TIMEOUT,8299,2,a3326b3eeb50ebbb,2026-08-02T06:34:00,degraded,gateway_timeout,0,0
+txn_5e0eb3e3b190,1235.68,INR,netbanking,ICICI Bank,AUTH_FAILED,379,1,bb333be27beb2ee1,2026-08-03T12:22:00,failed,authentication_failure,0,0
+txn_74561cc83721,33169.19,INR,wallet,,NSF,399,1,0ca9e48d4478a527,2026-08-03T21:24:00,failed,insufficient_funds,0,0
+txn_46ba110627de,30515.02,INR,netbanking,Axis Bank,NETWORK_ERROR,2573,2,c51fb0c31216d692,2026-08-01T10:42:00,failed,network_transient,0,0
+txn_7c3945d0f36e,34956.45,INR,upi,,CARD_EXPIRED,228,3,1cbfe43b7633feb7,2026-08-02T07:58:00,failed,card_invalid,0,0
+txn_9d8059d71ab0,20717.26,INR,upi,,NETWORK_ERROR,3407,1,1ea046288354f059,2026-08-02T16:17:00,degraded,network_transient,0,0
+txn_1ee123690258,26075.79,INR,upi,,DECLINED,2666,1,604f22a22f794ede,2026-08-01T04:33:00,failed,network_transient,0,1
+txn_ef00502cf519,24962.05,INR,card,Axis Bank,NSF,358,1,5556ccf8f6b1701b,2026-08-02T14:11:00,failed,insufficient_funds,0,0
+txn_b942be5d2010,4080.13,INR,wallet,,DECLINED,202,1,2af282e89e9a5418,2026-08-02T04:15:00,failed,insufficient_funds,0,1
+txn_186feff81861,26898.95,INR,wallet,ICICI Bank,TIMEOUT,8126,1,92c6894415052a60,2026-08-02T06:13:00,degraded,issuer_outage,1,0
+txn_a13f9082e92b,31386.72,INR,card,HDFC Bank,NSF,276,2,e73810cdcce62d18,2026-08-03T08:31:00,failed,insufficient_funds,0,0
+txn_3d0256a6057b,36719.78,INR,upi,,NSF,276,1,0bff698101e107de,2026-08-01T01:08:00,failed,insufficient_funds,0,0
+txn_5114da0482b4,13778.79,INR,upi,,NETWORK_ERROR,3760,2,b4d1228d1b55de36,2026-08-02T19:59:00,degraded,network_transient,0,0
+txn_b64d00d00f69,3328.7,INR,upi,,AUTH_FAILED,535,1,1e27001416f9d2fa,2026-08-01T10:55:00,failed,authentication_failure,0,0
+txn_86c1e939e36c,4992.09,INR,wallet,,TIMEOUT,4602,2,6e3067158fae3575,2026-08-02T19:58:00,degraded,gateway_timeout,0,0
+txn_5bc5225c25a0,10336.71,INR,card,Axis Bank,,6522,1,e529d3e96836231e,2026-08-02T11:28:00,degraded,gateway_timeout,0,1
+txn_9b01140c23b7,36156.33,INR,wallet,,TIMEOUT,7987,1,094e6b30f002a130,2026-08-02T02:17:00,degraded,gateway_timeout,0,0
+txn_3728491992ee,23774.39,INR,upi,,NSF,114,1,1df18cb2eae6a766,2026-08-03T00:43:00,failed,insufficient_funds,0,0
+txn_bbe70997b9a9,25195.29,INR,wallet,,TIMEOUT,11112,1,35a8fadcf1fd1b0b,2026-08-03T00:52:00,degraded,issuer_outage,0,0
+txn_99f62e07ae94,32680.79,INR,card,Kotak Mahindra,NETWORK_ERROR,3943,1,f433d33ef39e090c,2026-08-02T07:04:00,degraded,network_transient,0,0
+txn_625b75530109,24132.79,INR,card,Kotak Mahindra,,124,1,c6d02bdafbb4a0c2,2026-08-01T02:41:00,failed,insufficient_funds,0,1
+txn_470989f44ce3,4340.26,INR,upi,,UNKNOWN_ERROR,503,3,3cf67d41506cf10f,2026-08-01T21:03:00,failed,authentication_failure,0,1
+txn_ab724b124642,32673.96,INR,wallet,,NSF,197,1,3b6573b14b14fb6d,2026-08-02T09:57:00,failed,insufficient_funds,0,0
+txn_778dc63edc4d,44035.31,INR,wallet,,CARD_EXPIRED,272,2,de40e6f48173107c,2026-08-03T09:54:00,failed,card_invalid,0,0
+txn_5355f80a1848,22703.44,INR,card,IDFC First,DECLINED,163,1,a85b776edb461314,2026-08-02T17:31:00,failed,insufficient_funds,0,1
+txn_1353c1953428,4325.75,INR,wallet,,RISK_BLOCK,330,1,15f7c330a5206001,2026-08-01T22:31:00,failed,risk_flag,0,0
+txn_d718c545b2d4,15069.56,INR,card,SBI,TIMEOUT,6168,1,7793d2f99c05d1ee,2026-08-01T09:28:00,degraded,gateway_timeout,0,0
+txn_ac6218110f61,35028.12,INR,card,Axis Bank,AUTH_FAILED,241,1,3a4fd58a985315c0,2026-08-02T00:29:00,failed,authentication_failure,0,0
+txn_d8ce249433dc,14671.15,INR,upi,,NSF,235,1,47c62314bf01e052,2026-08-03T09:28:00,failed,insufficient_funds,0,0
+txn_ef1224c51c1e,36031.68,INR,upi,,NSF,342,2,144633df026503ef,2026-08-02T00:06:00,failed,insufficient_funds,0,0
+txn_f6b3dd79f769,4933.4,INR,wallet,,NETWORK_ERROR,4342,1,645719ebe53a9d46,2026-08-02T16:23:00,degraded,network_transient,0,0
+txn_19bbf3961a8d,30917.63,INR,card,Yes Bank,TIMEOUT,7211,2,6937357046b93873,2026-08-03T11:00:00,degraded,issuer_outage,0,0
+txn_f52a1081299d,43672.47,INR,upi,,UNKNOWN_ERROR,397,3,02505dd2dbe873f2,2026-08-02T12:14:00,failed,insufficient_funds,0,1
+txn_894d7743bdfc,40668.57,INR,card,SBI,CARD_EXPIRED,114,1,bd2ac5a855aa1944,2026-08-03T03:10:00,failed,card_invalid,0,0
+txn_e0217b449084,34245.66,INR,card,ICICI Bank,AUTH_FAILED,595,1,b1b5e7c1fc55b423,2026-08-03T15:20:00,failed,authentication_failure,0,0
+txn_c2438e0ab333,41391.44,INR,card,Axis Bank,DECLINED,4424,1,55ea1404d0c551f3,2026-08-01T03:42:00,degraded,network_transient,0,1
+txn_794dcf4c8235,31261.26,INR,netbanking,Yes Bank,TIMEOUT,7280,2,66070ebc98d934bb,2026-08-01T05:00:00,degraded,gateway_timeout,0,0
+txn_1c50863fc89b,900.17,INR,netbanking,Kotak Mahindra,TIMEOUT,6348,1,f5503b96fecd9c30,2026-08-03T10:47:00,degraded,gateway_timeout,0,0
+txn_61797cc1793b,20147.81,INR,wallet,,NSF,176,1,c1c8cd4b1696373d,2026-08-01T00:07:00,failed,insufficient_funds,0,0
+txn_11890da6e630,12547.73,INR,upi,,AUTH_FAILED,257,2,2078ab58802409d7,2026-08-03T16:46:00,failed,authentication_failure,0,0
+txn_4a4523c88db7,30090.86,INR,netbanking,IDFC First,NETWORK_ERROR,3812,1,e381c8c546f37f69,2026-08-03T20:55:00,degraded,network_transient,0,0
+txn_9ac3ca3aa154,29475.17,INR,wallet,,NSF,374,1,7a3da26ba7663274,2026-08-02T07:48:00,failed,insufficient_funds,0,0
+txn_167da131590e,9214.11,INR,card,Axis Bank,NSF,359,1,d40ef6ae03af9908,2026-08-03T17:53:00,failed,insufficient_funds,0,0
+txn_b845b0739b76,20488.14,INR,card,ICICI Bank,UNKNOWN_ERROR,7098,1,df666135b05607b2,2026-08-01T14:49:00,degraded,gateway_timeout,0,1
+txn_9a929ac0ca90,23264.6,INR,upi,,NSF,173,1,346d0e1a09e442ff,2026-08-01T00:12:00,failed,insufficient_funds,0,0
+txn_ed77b6bd2644,1271.73,INR,netbanking,ICICI Bank,TIMEOUT,7006,1,3b44fc21249a57d4,2026-08-02T06:03:00,degraded,issuer_outage,1,0
+txn_fea7b504da65,34358.26,INR,card,HDFC Bank,,250,1,cc5773a5f4eb4bac,2026-08-02T11:47:00,failed,card_invalid,0,1
+txn_34b16acc3b7b,29972.09,INR,wallet,,NSF,189,1,a08f31747366f6c5,2026-08-02T17:05:00,failed,insufficient_funds,0,0
+txn_66c513213ad2,15771.27,INR,card,Axis Bank,,569,1,741495922b79246e,2026-08-02T19:32:00,failed,authentication_failure,0,1
+txn_33c30017212d,6429.07,INR,upi,,NETWORK_ERROR,3078,2,3aad6581fb6643e7,2026-08-01T10:26:00,degraded,network_transient,0,0
+txn_0d65dfb70838,13595.61,INR,card,SBI,CARD_EXPIRED,184,1,9d481c7d6dc666d0,2026-08-03T08:52:00,failed,card_invalid,0,0
+txn_b0c62c5e53b6,13966.59,INR,wallet,,NSF,247,1,b364fad372702cc6,2026-08-01T16:03:00,failed,insufficient_funds,0,0
+txn_1d2d2e9397f4,18033.05,INR,card,SBI,NETWORK_ERROR,3748,1,e2e65dee8ba092bf,2026-08-02T10:48:00,degraded,network_transient,0,0
+txn_5b899201e6db,26143.89,INR,upi,,TIMEOUT,4738,2,313c9bda82c7100b,2026-08-02T20:36:00,degraded,gateway_timeout,0,0
+txn_ddd4a8577465,39951.62,INR,wallet,,UNKNOWN_ERROR,477,1,ea9d339ceed0eb66,2026-08-01T09:20:00,failed,authentication_failure,0,1
+txn_14414f190d19,39380.87,INR,upi,,AUTH_FAILED,321,2,51e03fa8c8922809,2026-08-02T00:10:00,failed,authentication_failure,0,0
+txn_b50151c31242,25373.01,INR,wallet,,,292,1,3f259564b3a6e02d,2026-08-03T05:01:00,failed,risk_flag,0,1
+txn_063095fa0de9,4756.46,INR,netbanking,ICICI Bank,TIMEOUT,4534,2,12d235efb8839e25,2026-08-02T16:42:00,degraded,gateway_timeout,0,0
+txn_0a82c0202f9c,39825.65,INR,card,Axis Bank,,2218,1,0c53c60613ba778d,2026-08-03T03:03:00,failed,network_transient,0,1
+txn_50333bc3e8f7,13834.54,INR,wallet,,UNKNOWN_ERROR,2093,1,477526cfa62bd11b,2026-08-02T04:55:00,failed,network_transient,0,1
+txn_c01bb5c4b41d,5234.83,INR,netbanking,Kotak Mahindra,NETWORK_ERROR,4965,1,7b99f87ee80c857f,2026-08-03T22:34:00,degraded,network_transient,0,0
+txn_bf4db77900f4,23500.61,INR,wallet,,TIMEOUT,8788,1,75b70db0cb3e7395,2026-08-03T21:50:00,degraded,gateway_timeout,0,0
+txn_53041dd0d4b3,1414.21,INR,card,IDFC First,DECLINED,6746,2,f68e5ae9248f5460,2026-08-01T18:47:00,degraded,gateway_timeout,0,1
+txn_5f3a7a222dd5,20094.61,INR,upi,,NSF,285,1,3192f6316390eea7,2026-08-03T02:09:00,failed,insufficient_funds,0,0
+txn_721e9ca5b387,27290.48,INR,card,IDFC First,CARD_EXPIRED,107,1,ef7f7005b91c4d78,2026-08-02T12:08:00,failed,card_invalid,0,0
+txn_53acb8c3a32a,23843.65,INR,card,SBI,AUTH_FAILED,362,1,460ab75ddeb939a0,2026-08-03T09:27:00,failed,authentication_failure,0,0
+txn_c911f68961e6,13604.87,INR,netbanking,IDFC First,,118,1,1e56a73c80bab3b1,2026-08-01T13:39:00,failed,card_invalid,0,1
+txn_cba0f8063e17,23442.07,INR,upi,,NETWORK_ERROR,4483,2,08ba2eaba2e31571,2026-08-01T19:05:00,degraded,network_transient,0,0
+txn_e6f7525ef593,6002.46,INR,upi,,NSF,265,1,b70b9eff2ae3eb7e,2026-08-01T20:10:00,failed,insufficient_funds,0,0
+txn_c4357539ba86,39856.61,INR,card,IDFC First,UNKNOWN_ERROR,271,1,fd00424a7595d120,2026-08-02T12:12:00,failed,insufficient_funds,0,1
+txn_18c9ad2a8dcc,6620.39,INR,wallet,,DECLINED,8096,1,1be59961e5f8568c,2026-08-01T05:18:00,degraded,gateway_timeout,0,1
+txn_9b0ee1d66808,25245.21,INR,upi,,DECLINED,246,1,4659189e4dc07de4,2026-08-03T03:58:00,failed,card_invalid,0,1
+txn_91ab660e45d8,18630.52,INR,upi,,NSF,187,1,608df5c1d0717b97,2026-08-03T04:13:00,failed,insufficient_funds,0,0
+txn_4242b23c5265,28451.82,INR,upi,,TIMEOUT,6567,1,b03db44cb2a9c706,2026-08-01T00:38:00,degraded,gateway_timeout,0,0
+txn_734e75cf0793,14452.83,INR,netbanking,ICICI Bank,DECLINED,177,2,62015c971f456fe9,2026-08-03T23:10:00,failed,card_invalid,0,1
+txn_bef8afa599e0,23484.94,INR,netbanking,Axis Bank,TIMEOUT,5096,1,8e802448bb6b4e40,2026-08-03T18:55:00,degraded,gateway_timeout,0,0
+txn_35d872dabb1d,32778.74,INR,wallet,,RISK_BLOCK,243,1,f5d3263a8475cf27,2026-08-01T06:59:00,failed,risk_flag,0,0
+txn_a857da05b178,26070.32,INR,wallet,,UNKNOWN_ERROR,6815,2,8d9c67a47493968e,2026-08-01T06:36:00,degraded,gateway_timeout,0,1
+txn_bb5372660231,32454.91,INR,netbanking,IDFC First,TIMEOUT,4638,1,e62d1bd45dd33ef4,2026-08-01T16:18:00,degraded,gateway_timeout,0,0
+txn_1dfae09eec21,32811.43,INR,card,SBI,NSF,346,1,c0e32472daa5a0ff,2026-08-02T03:07:00,failed,insufficient_funds,0,0
+txn_0607c1aa3233,12206.67,INR,upi,,DECLINED,235,1,f52f8d17ba2cbcf5,2026-08-02T15:32:00,failed,authentication_failure,0,1
+txn_496cea39ac79,5997.33,INR,upi,,CARD_EXPIRED,223,1,3bf6b011ae25a75b,2026-08-03T18:36:00,failed,card_invalid,0,0
+txn_522013a44ac3,30238.53,INR,card,IDFC First,UNKNOWN_ERROR,295,1,3818d1a2b0fd4613,2026-08-01T17:59:00,failed,card_invalid,0,1
+txn_7b3afa1d9aa3,38641.13,INR,card,HDFC Bank,,407,1,d04f74cc86fb571e,2026-08-03T16:59:00,failed,authentication_failure,0,1
+txn_734083342723,14829.22,INR,upi,,NSF,176,2,ce8d3e82abfd94c6,2026-08-01T00:41:00,failed,insufficient_funds,0,0
+txn_742e0d7f52ff,8154.54,INR,wallet,,TIMEOUT,8332,1,bb5fb20d1206ab16,2026-08-02T06:24:00,degraded,gateway_timeout,0,0
+txn_5a9acf2b75ea,29952.54,INR,wallet,,TIMEOUT,7174,1,8b9f3ca51c51657d,2026-08-02T18:41:00,degraded,gateway_timeout,0,0
+txn_0c1a6b4c97e2,29452.14,INR,card,Kotak Mahindra,TIMEOUT,6060,1,d815881f476e06a8,2026-08-02T06:25:00,degraded,gateway_timeout,0,0
+txn_060eacc9b25a,7609.05,INR,wallet,,NETWORK_ERROR,3971,1,8bcc138c1f3817af,2026-08-03T06:45:00,degraded,network_transient,0,0
+txn_8befb99373c7,28937.71,INR,wallet,,NSF,194,1,a1aebe1b99d6826e,2026-08-03T04:04:00,failed,insufficient_funds,0,0
+txn_a4a5f4d1b9b2,16337.53,INR,wallet,,AUTH_FAILED,388,2,b4fcdf570e0af4bc,2026-08-01T07:57:00,failed,authentication_failure,0,0
+txn_1acffceac857,2904.59,INR,wallet,,AUTH_FAILED,496,1,fc7f0e5dd55dfe5a,2026-08-01T07:02:00,failed,authentication_failure,0,0
+txn_bdcda46c018a,36659.08,INR,card,Kotak Mahindra,UNKNOWN_ERROR,387,2,b3de28816dbad456,2026-08-03T05:05:00,failed,insufficient_funds,0,1
+txn_333a4ddf76f1,20762.24,INR,card,IDFC First,NETWORK_ERROR,2647,1,b63d189cb4492481,2026-08-01T00:05:00,failed,network_transient,0,0
+txn_ec0064e0c9bb,39738.91,INR,wallet,,DECLINED,414,3,6d69bad915bda71d,2026-08-02T09:53:00,failed,authentication_failure,0,1
+txn_7b8f0939cc00,35963.34,INR,card,Yes Bank,AUTH_FAILED,213,1,0d64fb2c4f4691b8,2026-08-03T00:54:00,failed,authentication_failure,0,0
+txn_6a9acdeaf657,16006.18,INR,netbanking,ICICI Bank,,5557,1,9e3570dfd01b786e,2026-08-02T03:15:00,degraded,gateway_timeout,0,1
+txn_1fed389c9422,823.39,INR,netbanking,Axis Bank,CARD_EXPIRED,156,2,6ca3f13f9a66639d,2026-08-02T03:41:00,failed,card_invalid,0,0
+txn_ca2b369ecace,20527.56,INR,wallet,,,5099,2,7b55cf2323cfcfc6,2026-08-03T15:54:00,degraded,gateway_timeout,0,1
+txn_de4cbebecdd5,34963.23,INR,wallet,,TIMEOUT,6563,1,60bf5aa9e7c9ecdd,2026-08-03T23:42:00,degraded,gateway_timeout,0,0
+txn_39a8d48598d7,3106.15,INR,card,Kotak Mahindra,AUTH_FAILED,547,1,61419c342103a59b,2026-08-02T10:24:00,failed,authentication_failure,0,0
+txn_e9b954f27eaf,8901.51,INR,wallet,,TIMEOUT,8600,1,fa3c06f1db1aa4a5,2026-08-03T19:34:00,degraded,gateway_timeout,0,0
+txn_8066eeffbab3,9300.43,INR,upi,,TIMEOUT,6560,2,4665b40f4e7c8733,2026-08-02T19:35:00,degraded,gateway_timeout,0,0
+txn_09e3ea3936dd,39822.16,INR,wallet,,DECLINED,8102,1,3215cc8c9ee1d582,2026-08-03T03:14:00,degraded,issuer_outage,0,1
+txn_f868121858e0,8404.54,INR,card,Kotak Mahindra,AUTH_FAILED,217,2,0e3212b2721a1d7b,2026-08-01T10:08:00,failed,authentication_failure,0,0
+txn_e4b99dfac962,43598.12,INR,netbanking,ICICI Bank,UNKNOWN_ERROR,189,1,18797824fed24d30,2026-08-02T16:12:00,failed,insufficient_funds,0,1
+txn_bc3b3fbc5082,8494.26,INR,wallet,,NSF,387,1,b6888b7f9eb4b2fa,2026-08-02T11:32:00,failed,insufficient_funds,0,0
+txn_881f73d21e9a,15063.46,INR,card,SBI,CARD_EXPIRED,239,1,3b5ffd8cc62e3b1f,2026-08-01T23:54:00,failed,card_invalid,0,0
+txn_723bf45e484d,40442.02,INR,upi,,UNKNOWN_ERROR,299,1,494cf83c032d1b9b,2026-08-02T07:05:00,failed,card_invalid,0,1
+txn_d5b5c6f1bf51,42843.6,INR,upi,,NSF,135,2,64cee609cbb1ae7f,2026-08-01T05:29:00,failed,insufficient_funds,0,0
+txn_ce244871b3c1,7415.68,INR,upi,,NSF,260,1,6034568daa4ca722,2026-08-02T15:46:00,failed,insufficient_funds,0,0
+txn_e052f99c3d87,27878.27,INR,wallet,,TIMEOUT,4317,1,3772488304417f8d,2026-08-02T21:15:00,degraded,gateway_timeout,0,0
+txn_cff6c3d5e657,35908.5,INR,netbanking,IDFC First,TIMEOUT,4676,2,fb1d441a03d0bd3f,2026-08-01T10:46:00,degraded,gateway_timeout,0,0
+txn_4584577846a4,13849.87,INR,netbanking,Axis Bank,DECLINED,3542,2,c2e31c285ea3d8c4,2026-08-03T14:40:00,degraded,network_transient,0,1
+txn_e74ecfe591d5,40510.4,INR,netbanking,IDFC First,UNKNOWN_ERROR,319,1,32166a71e758d52f,2026-08-01T08:43:00,failed,insufficient_funds,0,1
+txn_5bcd2ce9d711,44010.81,INR,wallet,,TIMEOUT,6248,1,93b919d18c2a3d27,2026-08-01T06:41:00,degraded,gateway_timeout,0,0
+txn_0901ce1eb2d9,8543.79,INR,netbanking,ICICI Bank,NETWORK_ERROR,3103,1,88cd72eaadbc7cef,2026-08-02T22:50:00,degraded,network_transient,0,0
+txn_0dfae344ccbd,9649.15,INR,upi,,TIMEOUT,6553,1,12195997bb44a13e,2026-08-03T02:59:00,degraded,gateway_timeout,0,0
+txn_c3bbc29b82d5,34430.6,INR,wallet,,,135,2,d00d8d93a336a92b,2026-08-02T07:35:00,failed,card_invalid,0,1
+txn_8010e5456ec4,14648.83,INR,wallet,,TIMEOUT,8215,2,f815730b84014d8a,2026-08-01T00:09:00,degraded,gateway_timeout,0,0
+txn_9f4f5c42e80a,26197.56,INR,upi,,CARD_EXPIRED,263,2,37445d184651f3cb,2026-08-01T10:13:00,failed,card_invalid,0,0
+txn_5a654b218007,22677.76,INR,netbanking,IDFC First,DECLINED,151,2,488feadeef2a75c8,2026-08-03T12:06:00,failed,insufficient_funds,0,1
+txn_386037060501,28550.85,INR,netbanking,Kotak Mahindra,TIMEOUT,5971,1,c5015b358f1717ad,2026-08-02T05:12:00,degraded,gateway_timeout,0,0
+txn_58db55597257,32550.25,INR,netbanking,ICICI Bank,NETWORK_ERROR,3518,1,08159ee3f7131d9e,2026-08-01T06:14:00,degraded,network_transient,0,0
+txn_f2025817010b,30350.4,INR,card,HDFC Bank,,203,2,7c58ecbd7f0d7d61,2026-08-01T14:55:00,failed,card_invalid,0,1
+txn_be2a8215f6d4,21931.04,INR,wallet,,NSF,272,1,610dc3f0bab4e682,2026-08-03T07:12:00,failed,insufficient_funds,0,0
+txn_1adba8078e70,39207.58,INR,upi,,TIMEOUT,5125,3,0ea2dfe9accf3aa5,2026-08-02T22:47:00,degraded,gateway_timeout,0,0
+txn_2c4ce85ad20a,39268.73,INR,upi,,,289,1,4f85be3fdd7d5a27,2026-08-03T11:55:00,failed,card_invalid,0,1
+txn_32475e8e7f79,4261.55,INR,upi,,DECLINED,4628,1,2277eba90819ce14,2026-08-01T02:54:00,degraded,network_transient,0,1
+txn_2058e407c8f5,11250.91,INR,netbanking,ICICI Bank,UNKNOWN_ERROR,3129,1,e389539fafa60be4,2026-08-01T15:24:00,degraded,network_transient,0,1
+txn_1af1005b6bb9,16304.46,INR,card,HDFC Bank,CARD_EXPIRED,296,1,8bea6c250b55cadc,2026-08-03T02:19:00,failed,card_invalid,0,0
+txn_624f3b8575ac,36370.72,INR,netbanking,IDFC First,UNKNOWN_ERROR,120,1,725ed4b935efcffb,2026-08-02T20:45:00,failed,insufficient_funds,0,1
+txn_71436aa2671a,43021.37,INR,card,Kotak Mahindra,NSF,155,1,453e7ff532e787b0,2026-08-03T03:44:00,failed,insufficient_funds,0,0
+txn_e4403e1025fe,25897.62,INR,upi,,NETWORK_ERROR,2291,1,8717caaa8777a021,2026-08-02T22:14:00,failed,network_transient,0,0
+txn_c3ea4864a56b,6500.33,INR,card,Axis Bank,UNKNOWN_ERROR,123,1,962d65196c20e030,2026-08-01T17:49:00,failed,insufficient_funds,0,1
+txn_ca76b53dbff2,15212.76,INR,card,ICICI Bank,NSF,177,1,b551ef13402b9f28,2026-08-01T20:51:00,failed,insufficient_funds,0,0
+txn_89a9884c664d,3536.9,INR,card,Axis Bank,TIMEOUT,8223,2,eec5ca6252927d93,2026-08-03T02:23:00,degraded,gateway_timeout,0,0
+txn_d1559df659e7,1577.0,INR,wallet,,,350,1,5c40a38fee4b547c,2026-08-02T10:56:00,failed,insufficient_funds,0,1
+txn_25d219bf0de6,25933.99,INR,wallet,,NETWORK_ERROR,3544,1,a2a58431f4330c63,2026-08-02T09:12:00,degraded,network_transient,0,0
+txn_ca5416047a72,6100.33,INR,upi,,RISK_BLOCK,278,1,fa8b9a5c56abfded,2026-08-02T20:00:00,failed,risk_flag,0,0
+txn_34eecdcdbd0a,41090.38,INR,upi,,NSF,218,1,47f6b9c77b427f3f,2026-08-02T10:40:00,failed,insufficient_funds,0,0
+txn_0b08c4a39e73,29724.69,INR,upi,,DECLINED,11028,2,8bce402c7bd71498,2026-08-03T00:59:00,degraded,issuer_outage,0,1
+txn_661c00b15626,36387.92,INR,upi,,DECLINED,6379,3,4c0df5e7c9d196b4,2026-08-01T00:12:00,degraded,gateway_timeout,0,1
+txn_a22166285d0f,21920.84,INR,upi,,NSF,392,1,1d707fb087399fd1,2026-08-02T09:10:00,failed,insufficient_funds,0,0
+txn_a41405c87cbe,35904.33,INR,upi,,AUTH_FAILED,522,3,5c011779f88841dc,2026-08-01T02:39:00,failed,authentication_failure,0,0
+txn_250247e59cf7,28917.81,INR,card,IDFC First,AUTH_FAILED,581,1,1d6ac14f66a54df2,2026-08-01T09:54:00,failed,authentication_failure,0,0
+txn_a96b9510c288,40084.53,INR,card,Kotak Mahindra,NETWORK_ERROR,3147,1,4333fc20344ef205,2026-08-02T22:39:00,degraded,network_transient,0,0
+txn_04283e23d680,28187.19,INR,card,SBI,,10280,1,f977f616ddff1b4f,2026-08-01T14:39:00,degraded,issuer_outage,0,1
+txn_cf2a1b7fc5b4,30479.12,INR,wallet,,CARD_EXPIRED,136,1,08c3e02d8a859ff7,2026-08-02T12:41:00,failed,card_invalid,0,0
+txn_e95f9442b98c,34114.13,INR,upi,,AUTH_FAILED,512,2,778eaf284a60d0ca,2026-08-03T07:21:00,failed,authentication_failure,0,0
+txn_e9045ce10e66,43514.98,INR,netbanking,SBI,NETWORK_ERROR,4627,1,8d959fee2d1e0942,2026-08-02T21:12:00,degraded,network_transient,0,0
+txn_df07fe0eb5c1,11512.11,INR,wallet,,CARD_EXPIRED,269,3,d2e1420575918760,2026-08-03T13:54:00,failed,card_invalid,0,0
+txn_34478ce78b32,33246.09,INR,wallet,,NETWORK_ERROR,3328,1,88cdc06923f944b0,2026-08-01T18:45:00,degraded,network_transient,0,0
+txn_12ad21ebcbe7,5355.52,INR,upi,,TIMEOUT,7643,1,a6c4c247128a262d,2026-08-02T20:30:00,degraded,gateway_timeout,0,0
+txn_2bb49a255cec,4774.16,INR,netbanking,HDFC Bank,RISK_BLOCK,297,2,94387a9d73e08bab,2026-08-02T04:39:00,failed,risk_flag,0,0
+txn_8db50ec29bd3,43702.87,INR,card,ICICI Bank,TIMEOUT,10572,2,c4a9ce5002aa55b3,2026-08-02T06:08:00,degraded,issuer_outage,1,0
+txn_85c78d20ebf4,29783.92,INR,netbanking,Yes Bank,TIMEOUT,8195,2,55e3eb710340f2a9,2026-08-03T01:03:00,degraded,issuer_outage,0,0
+txn_0cfbfa9d6922,3702.56,INR,upi,,UNKNOWN_ERROR,364,2,efa13278b03bfb61,2026-08-02T13:07:00,failed,insufficient_funds,0,1
+txn_8f3b2eb200c2,37320.52,INR,upi,,NSF,393,1,f60e483391eff6cf,2026-08-01T22:27:00,failed,insufficient_funds,0,0
+txn_5d38874d9a35,24832.09,INR,card,Yes Bank,NETWORK_ERROR,4214,2,6d4771a41384f7f3,2026-08-01T12:44:00,degraded,network_transient,0,0
+txn_a39c97ed5034,2597.43,INR,upi,,TIMEOUT,8054,1,3b5c0502852d82a6,2026-08-02T08:54:00,degraded,gateway_timeout,0,0
+txn_15f396fb4caf,29268.04,INR,wallet,,DECLINED,194,2,9a0308ed27185756,2026-08-03T10:34:00,failed,card_invalid,0,1
+txn_e06d4843c774,27555.28,INR,upi,,AUTH_FAILED,249,1,70aa960c81bbd11e,2026-08-02T22:17:00,failed,authentication_failure,0,0
+txn_0e6236df06e0,21459.87,INR,card,Axis Bank,NSF,312,2,0c28c5e721503998,2026-08-02T02:32:00,failed,insufficient_funds,0,0
+txn_eb8ecc4f8af4,25049.65,INR,upi,,TIMEOUT,7900,1,3ac76aacc6354f77,2026-08-03T19:00:00,degraded,gateway_timeout,0,0
+txn_d97703ae4f81,13567.07,INR,wallet,,DECLINED,10655,1,d7412643d83a2667,2026-08-02T17:14:00,degraded,issuer_outage,0,1
+txn_e1d750c88f38,4087.61,INR,wallet,,AUTH_FAILED,466,3,3b72a64ff295a4db,2026-08-02T07:03:00,failed,authentication_failure,0,0
+txn_f927262bd966,5104.32,INR,card,HDFC Bank,DECLINED,266,1,3a44b329f12e03e9,2026-08-01T04:16:00,failed,authentication_failure,0,1
+txn_c3550b61a302,43829.04,INR,wallet,,AUTH_FAILED,233,1,b6e8de9af8e04ed5,2026-08-03T10:51:00,failed,authentication_failure,0,0
+txn_9124b7a0d22e,12099.68,INR,netbanking,Axis Bank,CARD_EXPIRED,247,1,5e22b472ff921726,2026-08-03T18:59:00,failed,card_invalid,0,0
+txn_e5cbda04fbc4,31598.09,INR,netbanking,Kotak Mahindra,UNKNOWN_ERROR,152,1,5945b99d3c8cf28e,2026-08-02T02:05:00,failed,risk_flag,0,1
+txn_ddc521460683,4765.29,INR,card,ICICI Bank,DECLINED,360,1,099b8476ca2ec83f,2026-08-01T01:40:00,failed,insufficient_funds,0,1
+txn_970a1e74e8b1,38253.47,INR,wallet,,TIMEOUT,4864,1,c96d719001bfb6b0,2026-08-03T01:27:00,degraded,gateway_timeout,0,0
+txn_2ab3d35b4b54,37451.27,INR,card,Axis Bank,CARD_EXPIRED,125,1,bcffc29e5bf2ba05,2026-08-03T12:53:00,failed,card_invalid,0,0
+txn_2fd0537bfff0,28846.18,INR,wallet,,NSF,310,1,949394829d95adf0,2026-08-01T23:49:00,failed,insufficient_funds,0,0
+txn_db042a3675c5,25573.76,INR,netbanking,Axis Bank,NSF,186,1,a1c9fcc819fd7bc2,2026-08-02T09:36:00,failed,insufficient_funds,0,0
+txn_4bab095321a9,8892.42,INR,netbanking,Yes Bank,AUTH_FAILED,553,3,671dbcaeb900ea4d,2026-08-02T18:46:00,failed,authentication_failure,0,0
+txn_bfa8c7d003ba,15083.45,INR,card,ICICI Bank,NETWORK_ERROR,2778,3,a165f099d2ec4f6f,2026-08-01T16:01:00,failed,network_transient,0,0
+txn_17a09618dba2,44264.83,INR,wallet,,,269,3,15cb8c9c047706db,2026-08-03T10:46:00,failed,insufficient_funds,0,1
+txn_c1e1d1ff5dc5,17050.59,INR,upi,,TIMEOUT,7765,2,1d9cbd6be9b0f37d,2026-08-02T22:44:00,degraded,gateway_timeout,0,0
+txn_a28acdf1a862,31904.63,INR,upi,,TIMEOUT,6247,1,712381b7067fff3f,2026-08-01T07:26:00,degraded,gateway_timeout,0,0
+txn_91ef03b62477,3919.17,INR,netbanking,IDFC First,UNKNOWN_ERROR,169,1,0b55b6d3715d0857,2026-08-01T08:48:00,failed,risk_flag,0,1
+txn_3c20e6cd070e,20345.45,INR,upi,,AUTH_FAILED,294,2,b1058e96440da857,2026-08-01T17:04:00,failed,authentication_failure,0,0
+txn_b13878268667,18833.06,INR,card,Kotak Mahindra,NSF,284,1,a35398426f2efd35,2026-08-03T23:49:00,failed,insufficient_funds,0,0
+txn_8db4aa2e6a78,20555.79,INR,netbanking,Axis Bank,TIMEOUT,8499,2,ceec828572e218d0,2026-08-02T05:49:00,degraded,gateway_timeout,0,0
+txn_f98da4041732,32836.65,INR,card,ICICI Bank,TIMEOUT,7618,1,96c9daa92536fd62,2026-08-03T07:35:00,degraded,gateway_timeout,0,0
+txn_b4664549db98,16020.32,INR,upi,,TIMEOUT,10032,1,e400fa13612c48a0,2026-08-03T22:57:00,degraded,issuer_outage,0,0
+txn_f0a501ecb8a1,5579.32,INR,card,SBI,UNKNOWN_ERROR,472,1,ce40a547bd6dc9e0,2026-08-03T02:35:00,failed,authentication_failure,0,1
+txn_eca961b47e1f,11661.11,INR,card,Yes Bank,NSF,100,1,30798ebb31575090,2026-08-03T11:49:00,failed,insufficient_funds,0,0
+txn_3f4acfa14662,40870.97,INR,card,Yes Bank,AUTH_FAILED,493,1,e37113677af4af8d,2026-08-01T05:05:00,failed,authentication_failure,0,0
+txn_c5c2c495ff2c,17204.38,INR,netbanking,Axis Bank,TIMEOUT,5254,1,4d7af2f30ad07aca,2026-08-01T01:16:00,degraded,gateway_timeout,0,0
+txn_6dde0be933f2,3558.44,INR,upi,,CARD_EXPIRED,126,1,58377361bb66e35f,2026-08-02T17:10:00,failed,card_invalid,0,0
+txn_c4063fd8456a,25512.3,INR,upi,,RISK_BLOCK,191,2,dcd75f9920897ab3,2026-08-02T00:25:00,failed,risk_flag,0,0
+txn_23a4db86a298,17185.81,INR,upi,,DECLINED,8090,1,31055418c07fffb1,2026-08-02T22:05:00,degraded,gateway_timeout,0,1
+txn_70034d0709d8,24084.21,INR,netbanking,SBI,TIMEOUT,6142,1,9825b20c96c1f08e,2026-08-03T19:53:00,degraded,gateway_timeout,0,0
+txn_1a152771bb39,7577.42,INR,card,Kotak Mahindra,UNKNOWN_ERROR,243,1,6c3e1034db71676b,2026-08-02T01:31:00,failed,insufficient_funds,0,1
+txn_00afbd93c406,24229.47,INR,netbanking,SBI,NETWORK_ERROR,2807,1,351e376e2014758a,2026-08-02T11:49:00,failed,network_transient,0,0
+txn_2b74fada7d28,41943.23,INR,netbanking,SBI,AUTH_FAILED,210,1,bd51b80be323ecf8,2026-08-02T23:56:00,failed,authentication_failure,0,0
+txn_919407a112ca,10860.43,INR,wallet,,UNKNOWN_ERROR,6913,2,f8d3c450305ac222,2026-08-03T08:05:00,degraded,issuer_outage,0,1
+txn_c7227ff7f137,24146.24,INR,card,Axis Bank,RISK_BLOCK,266,1,7f2a07e976ccefc7,2026-08-03T16:03:00,failed,risk_flag,0,0
+txn_d81c91240806,34507.5,INR,card,ICICI Bank,TIMEOUT,5688,1,b959e2b6389efd48,2026-08-01T04:35:00,degraded,gateway_timeout,0,0
+txn_5846b65fb4d0,35484.09,INR,upi,,RISK_BLOCK,258,1,8076b5802f2a4126,2026-08-02T06:41:00,failed,risk_flag,0,0
+txn_f88fb16f3334,308.45,INR,netbanking,HDFC Bank,TIMEOUT,8757,1,ab220edc774caaf5,2026-08-03T20:04:00,degraded,issuer_outage,0,0
+txn_2ffc6d4a21d0,15978.22,INR,netbanking,SBI,TIMEOUT,5372,1,c809dac56fa69cc5,2026-08-02T17:30:00,degraded,gateway_timeout,0,0
+txn_0956b643300b,24979.05,INR,wallet,,AUTH_FAILED,467,1,72099470a5ff4ec5,2026-08-03T16:49:00,failed,authentication_failure,0,0
+txn_9bd279843bbb,6374.85,INR,wallet,,,214,1,966d1472e8721f7c,2026-08-01T10:49:00,failed,card_invalid,0,1
+txn_ee157f05cd44,23523.09,INR,upi,,CARD_EXPIRED,221,1,d7b13585eb49930f,2026-08-02T18:36:00,failed,card_invalid,0,0
+txn_76eb3895274e,5363.36,INR,upi,,AUTH_FAILED,567,1,c5eb2005541ea8a5,2026-08-01T12:24:00,failed,authentication_failure,0,0
+txn_b007bb9e4f04,28830.2,INR,card,HDFC Bank,TIMEOUT,7327,1,b6f3ad56a63b20f4,2026-08-01T21:50:00,degraded,gateway_timeout,0,0
+txn_d5bd9705494b,23128.73,INR,netbanking,Axis Bank,NSF,156,1,29e109f21d255b02,2026-08-03T18:26:00,failed,insufficient_funds,0,0
+txn_8070dc760269,3696.31,INR,wallet,,DECLINED,7039,1,b640464509e6f2f3,2026-08-02T02:00:00,degraded,gateway_timeout,0,1
+txn_e25973f3725a,25368.27,INR,wallet,,CARD_EXPIRED,272,2,f2f5ad36619f4fc3,2026-08-02T15:02:00,failed,card_invalid,0,0
+txn_e3b27328776d,8689.88,INR,card,Yes Bank,NETWORK_ERROR,3765,1,5ab7e768a2f0134e,2026-08-03T08:07:00,degraded,network_transient,0,0
+txn_c5a16bb3a5dd,8418.71,INR,card,SBI,TIMEOUT,7913,1,9e7792e54bc52c9f,2026-08-01T08:55:00,degraded,gateway_timeout,0,0
+txn_79366eac48d0,878.46,INR,card,SBI,NSF,223,2,674bbab190ec7a1a,2026-08-01T14:09:00,failed,insufficient_funds,0,0
+txn_826367d4ff05,44530.12,INR,upi,ICICI Bank,TIMEOUT,10608,1,675b24d5d40f79b4,2026-08-02T06:08:00,degraded,issuer_outage,1,0
+txn_6ad3473821e2,1450.32,INR,card,HDFC Bank,NSF,296,1,407c1141ce2762ec,2026-08-03T10:13:00,failed,insufficient_funds,0,0
+txn_d9276190d6b5,17640.9,INR,wallet,,TIMEOUT,8409,2,fed77c43d87c490b,2026-08-02T06:06:00,degraded,gateway_timeout,0,0
+txn_ee2d1a9f4093,31907.17,INR,card,HDFC Bank,AUTH_FAILED,509,1,b3b91b93df1a4590,2026-08-02T01:13:00,failed,authentication_failure,0,0
+txn_a57240dc6f31,42671.58,INR,wallet,,,109,1,fcaf303c5f0f0f2f,2026-08-01T17:54:00,failed,insufficient_funds,0,1
+txn_f594116f5dea,22402.22,INR,netbanking,HDFC Bank,AUTH_FAILED,455,2,6a5e633b0cb12ced,2026-08-01T22:47:00,failed,authentication_failure,0,0
+txn_c598c82d703b,16256.18,INR,wallet,,NETWORK_ERROR,3409,2,2abaf6c2ae4643d4,2026-08-03T20:35:00,degraded,network_transient,0,0
+txn_ed8c007161c8,25098.51,INR,card,IDFC First,TIMEOUT,6282,1,c6c9b24769f1cf86,2026-08-03T10:35:00,degraded,gateway_timeout,0,0
+txn_62c50d1745f2,20446.08,INR,card,IDFC First,TIMEOUT,5816,1,5dd3f54cd85ebe96,2026-08-03T00:29:00,degraded,gateway_timeout,0,0
+txn_2840c08d3ce8,17999.18,INR,netbanking,Yes Bank,TIMEOUT,10837,1,3e76ed693c06d637,2026-08-03T08:43:00,degraded,issuer_outage,0,0
+txn_3dda2489b057,40799.47,INR,upi,,AUTH_FAILED,370,1,f8c36b446cc1d05a,2026-08-01T19:18:00,failed,authentication_failure,0,0
+txn_868711bd9800,17528.96,INR,wallet,,AUTH_FAILED,592,1,fbdc67c9de8f493f,2026-08-02T14:39:00,failed,authentication_failure,0,0
+txn_281bcc59afa9,4949.69,INR,card,Kotak Mahindra,DECLINED,188,1,c73722849e67560a,2026-08-03T23:52:00,failed,risk_flag,0,1
+txn_eb0a86cfda31,21304.34,INR,wallet,,NETWORK_ERROR,2361,1,769ca1497b4f68ef,2026-08-02T06:16:00,failed,network_transient,0,0
+txn_5acd69ede926,34542.87,INR,upi,,UNKNOWN_ERROR,281,1,84f3d52906704ccf,2026-08-02T08:55:00,failed,authentication_failure,0,1
+txn_4a90264988f8,39007.74,INR,card,Axis Bank,TIMEOUT,5593,1,b6069e58427f34bb,2026-08-03T04:06:00,degraded,gateway_timeout,0,0
+txn_6ad2acab8fdd,26869.96,INR,upi,,DECLINED,7472,1,d004f338c59192fb,2026-08-02T06:17:00,degraded,issuer_outage,0,1
+txn_927c2147991e,34843.37,INR,upi,,DECLINED,350,2,257ca56d01e292bd,2026-08-01T12:01:00,failed,insufficient_funds,0,1
+txn_ba37f9de75f4,22944.6,INR,upi,,RISK_BLOCK,167,1,9d95a837339b8187,2026-08-03T08:39:00,failed,risk_flag,0,0
+txn_c586ed261bd7,18594.64,INR,wallet,,,6242,1,9b8e1164e82b1ed2,2026-08-02T01:39:00,degraded,gateway_timeout,0,1
+txn_ec74aeb828a7,43224.44,INR,card,Yes Bank,CARD_EXPIRED,262,1,1d27717229fd741b,2026-08-02T18:39:00,failed,card_invalid,0,0
+txn_b05170328976,6615.37,INR,upi,,NSF,138,1,6a944d9d75b18871,2026-08-02T12:11:00,failed,insufficient_funds,0,0
+txn_420828ea997a,21387.32,INR,upi,,CARD_EXPIRED,176,2,8189d334c53c5bb0,2026-08-01T19:42:00,failed,card_invalid,0,0
+txn_48bfd8dd2f35,15183.19,INR,upi,,,544,1,0e5bc402cab00315,2026-08-02T03:11:00,failed,authentication_failure,0,1
+txn_5af5e094b371,38328.38,INR,card,HDFC Bank,NSF,170,1,af6c51ea831d91b4,2026-08-01T23:16:00,failed,insufficient_funds,0,0
+txn_34ebd686a159,6694.63,INR,netbanking,Kotak Mahindra,,399,1,8b178b8448f72dcc,2026-08-03T09:00:00,failed,insufficient_funds,0,1
+txn_bbe17de7e453,14715.85,INR,wallet,,UNKNOWN_ERROR,285,1,15ae0a1f1fdd4ec5,2026-08-01T14:27:00,failed,insufficient_funds,0,1
+txn_debf875153be,31178.02,INR,upi,,RISK_BLOCK,337,2,b5005180d7865ded,2026-08-01T14:08:00,failed,risk_flag,0,0
+txn_deaeafa42381,16741.24,INR,upi,,UNKNOWN_ERROR,324,1,e5d7d539d031aab8,2026-08-01T05:33:00,failed,insufficient_funds,0,1
+txn_839397cf7659,13553.52,INR,wallet,,NSF,117,1,5077d10caa60bd14,2026-08-03T22:33:00,failed,insufficient_funds,0,0
+txn_7561e32ee2fa,12416.26,INR,netbanking,Kotak Mahindra,AUTH_FAILED,478,1,428f059b2cc3ad0e,2026-08-03T03:25:00,failed,authentication_failure,0,0
+txn_02167b5f08b8,33614.85,INR,upi,,TIMEOUT,7111,1,35e2fcbe1baf5bfa,2026-08-03T05:15:00,degraded,gateway_timeout,0,0
+txn_93ea2b5ad694,24504.93,INR,netbanking,HDFC Bank,TIMEOUT,11170,1,ed113fc18502be39,2026-08-02T15:03:00,degraded,issuer_outage,0,0
+txn_77efc7ee632a,28197.69,INR,netbanking,Axis Bank,CARD_EXPIRED,246,1,9fe43816b8de5328,2026-08-01T09:57:00,failed,card_invalid,0,0
+txn_3f6d2a6fe9cc,33184.92,INR,netbanking,IDFC First,UNKNOWN_ERROR,310,2,04a4ba7edb321daf,2026-08-02T09:52:00,failed,insufficient_funds,0,1
+txn_4a8a645dce6e,15179.67,INR,wallet,,UNKNOWN_ERROR,580,1,13a6ac7d1c36e495,2026-08-03T23:08:00,failed,authentication_failure,0,1
+txn_39f35591412f,44139.74,INR,wallet,,DECLINED,261,1,ef78ad26836dfa51,2026-08-01T18:24:00,failed,card_invalid,0,1
+txn_a2ae4634f90c,14302.33,INR,upi,,UNKNOWN_ERROR,149,1,7fa4232da42c67eb,2026-08-03T18:06:00,failed,card_invalid,0,1
+txn_c220deafe489,14021.66,INR,upi,,AUTH_FAILED,261,1,21521591495e2696,2026-08-01T18:44:00,failed,authentication_failure,0,0
+txn_f585536f3a83,5863.62,INR,card,Axis Bank,AUTH_FAILED,565,2,827b824006ccbf3a,2026-08-02T20:29:00,failed,authentication_failure,0,0
+txn_907539b3fe61,35656.04,INR,upi,,TIMEOUT,8312,1,c006f8d257750a3e,2026-08-03T09:48:00,degraded,gateway_timeout,0,0
+txn_13ff4f31e2ab,28380.64,INR,card,ICICI Bank,,176,2,2bfb442e431c4d5d,2026-08-02T17:29:00,failed,insufficient_funds,0,1
+txn_f2e2f285e8e1,39228.84,INR,upi,,NETWORK_ERROR,2096,1,b3b243903c22d84e,2026-08-03T06:24:00,failed,network_transient,0,0
+txn_1ffc563518f1,40417.36,INR,wallet,ICICI Bank,TIMEOUT,7965,1,6001d7b0946a186c,2026-08-02T06:13:00,degraded,issuer_outage,1,0
+txn_ee811d00049f,25947.68,INR,card,IDFC First,NETWORK_ERROR,4753,2,fc6e6d6f871d971e,2026-08-01T05:29:00,degraded,network_transient,0,0
+txn_4794c7f3d665,14732.4,INR,netbanking,SBI,NSF,252,1,728e18a9c22bce81,2026-08-03T22:37:00,failed,insufficient_funds,0,0
+txn_cc2ce60d3030,6437.18,INR,upi,,AUTH_FAILED,342,1,591ef650b8188eef,2026-08-01T10:17:00,failed,authentication_failure,0,0
+txn_1f69ab18d8c7,22266.61,INR,card,ICICI Bank,TIMEOUT,7560,1,b5236831b837f1e8,2026-08-02T16:55:00,degraded,gateway_timeout,0,0
+txn_ae6deee2e059,6608.22,INR,wallet,,UNKNOWN_ERROR,536,1,30e36c95e2810264,2026-08-01T18:32:00,failed,authentication_failure,0,1
+txn_f15919daa8ae,30259.71,INR,netbanking,Yes Bank,TIMEOUT,8410,1,311c035e074c0624,2026-08-02T16:56:00,degraded,issuer_outage,0,0
+txn_36f3fae63aaa,27399.64,INR,wallet,,NSF,117,1,0019d7144ad599a7,2026-08-02T08:13:00,failed,insufficient_funds,0,0
+txn_e4cf2bba57ca,18242.2,INR,wallet,,AUTH_FAILED,396,1,6d8a13c31ffa36bd,2026-08-02T03:13:00,failed,authentication_failure,0,0
+txn_874df7e9a354,21463.54,INR,netbanking,SBI,NSF,110,1,deebc8f72ea719a6,2026-08-02T17:22:00,failed,insufficient_funds,0,0
+txn_46ea9910f78b,44370.11,INR,netbanking,Kotak Mahindra,,390,1,86e4f8e62d7919a9,2026-08-02T07:42:00,failed,insufficient_funds,0,1
+txn_d0659e1ce01c,37588.46,INR,upi,,NSF,158,1,34181d4831a28f02,2026-08-01T07:25:00,failed,insufficient_funds,0,0
+txn_048d0e5cdc5d,23776.94,INR,netbanking,ICICI Bank,UNKNOWN_ERROR,165,1,28ad8d3fef77cd52,2026-08-02T13:02:00,failed,risk_flag,0,1
+txn_fcc65c3edbe8,31999.89,INR,wallet,,TIMEOUT,8003,1,80eb305f5212109d,2026-08-01T04:12:00,degraded,gateway_timeout,0,0
+txn_08aaa1cd48f7,31624.81,INR,upi,,NSF,320,1,b8bdf952293435dc,2026-08-02T07:11:00,failed,insufficient_funds,0,0
+txn_c1ac0493fc23,44805.55,INR,wallet,,TIMEOUT,7790,1,48c9f6f9c37a75fb,2026-08-03T10:27:00,degraded,gateway_timeout,0,0
+txn_831e7f09daab,11203.27,INR,card,HDFC Bank,TIMEOUT,6195,1,52b8c3397f44f63f,2026-08-01T21:03:00,degraded,gateway_timeout,0,0
+txn_b3716bef782e,24909.02,INR,netbanking,ICICI Bank,UNKNOWN_ERROR,9729,1,94c71ce9b58818bf,2026-08-02T06:02:00,degraded,issuer_outage,1,1
+txn_3adfd039b9b8,15162.92,INR,upi,,TIMEOUT,6461,1,a7848df3e3e90273,2026-08-02T03:25:00,degraded,gateway_timeout,0,0
+txn_7b74febea339,38981.05,INR,netbanking,SBI,NETWORK_ERROR,2509,2,e5e8bd16cc1f8fdc,2026-08-03T11:39:00,failed,network_transient,0,0
+txn_574d0dc1a78d,28384.89,INR,card,Kotak Mahindra,NSF,175,1,c93184333f2fc174,2026-08-02T11:15:00,failed,insufficient_funds,0,0
+txn_25eac8c6cd0f,23053.83,INR,upi,,NSF,328,1,48647626dbd01cfb,2026-08-03T15:13:00,failed,insufficient_funds,0,0
+txn_ac8cdf4189b6,4227.29,INR,card,ICICI Bank,UNKNOWN_ERROR,5898,1,2e0181cd0bb8c95e,2026-08-02T06:15:00,degraded,issuer_outage,1,1
+txn_87c2124cdf30,1332.47,INR,wallet,,UNKNOWN_ERROR,468,2,f34c0441ab47b6cc,2026-08-01T11:21:00,failed,authentication_failure,0,1
+txn_094d289c597f,26633.59,INR,card,ICICI Bank,UNKNOWN_ERROR,5244,1,2d97c451267e7b5b,2026-08-02T06:02:00,degraded,issuer_outage,1,1
+txn_758634d84112,34880.34,INR,netbanking,HDFC Bank,RISK_BLOCK,245,2,e316e8e2d90ae3b0,2026-08-03T06:00:00,failed,risk_flag,0,0
+txn_12c4d61e72a0,31872.79,INR,wallet,,NETWORK_ERROR,2721,2,afd60f8fd3e6bc8d,2026-08-02T12:52:00,failed,network_transient,0,0
+txn_22e2afd19e1b,2701.05,INR,card,IDFC First,AUTH_FAILED,295,1,cb40f04479e46408,2026-08-01T09:16:00,failed,authentication_failure,0,0
+txn_0d0ec4235f18,41531.89,INR,card,Yes Bank,UNKNOWN_ERROR,286,1,9d0346ed60f28a04,2026-08-03T11:20:00,failed,insufficient_funds,0,1
+txn_680d1e2048b9,5840.93,INR,upi,,NETWORK_ERROR,3022,1,51efe63de84007aa,2026-08-02T19:58:00,degraded,network_transient,0,0
+txn_fdf7f1e7a80d,21468.75,INR,netbanking,Axis Bank,NSF,336,2,feedaf87bee75d6c,2026-08-02T14:32:00,failed,insufficient_funds,0,0
+txn_f960ac853668,20382.99,INR,wallet,,TIMEOUT,7547,1,0c5a4b77170f3660,2026-08-03T05:10:00,degraded,gateway_timeout,0,0
+txn_9e05e77f77a7,5418.36,INR,upi,,TIMEOUT,8082,3,f34ce69de39ede17,2026-08-02T15:50:00,degraded,gateway_timeout,0,0
+txn_a6e7d6f34f48,43505.9,INR,upi,,UNKNOWN_ERROR,498,1,303b4599d284506e,2026-08-01T06:54:00,failed,authentication_failure,0,1
+txn_85575b5a35fe,33856.58,INR,netbanking,Yes Bank,NETWORK_ERROR,2129,1,3c15f03c465ddbf5,2026-08-01T11:51:00,failed,network_transient,0,0
+txn_357eb4bb024d,27522.04,INR,upi,,RISK_BLOCK,315,1,250e79c9e44a1159,2026-08-01T19:38:00,failed,risk_flag,0,0
+txn_f97a3a487087,4557.71,INR,wallet,,NSF,336,2,1c1ba2a4d6279c2d,2026-08-02T09:00:00,failed,insufficient_funds,0,0
+txn_4a4cf9a0b6e0,42067.79,INR,netbanking,Axis Bank,NSF,224,2,37683774a0baebd2,2026-08-03T03:44:00,failed,insufficient_funds,0,0
+txn_9932c56df83a,4040.19,INR,card,ICICI Bank,DECLINED,271,1,4a1f815a55ca8fe6,2026-08-02T09:52:00,failed,authentication_failure,0,1
+txn_723c326c4cd6,26983.41,INR,wallet,,NSF,231,1,d275a38aa5247c71,2026-08-01T00:58:00,failed,insufficient_funds,0,0
+txn_e3e0a9433def,10147.88,INR,wallet,,NSF,269,1,27523dcd230ca47b,2026-08-03T16:35:00,failed,insufficient_funds,0,0
+txn_a99c140948a7,9902.06,INR,card,Yes Bank,AUTH_FAILED,366,2,bec086a77cd5d24d,2026-08-01T23:36:00,failed,authentication_failure,0,0
+txn_af9629e4caa7,20283.4,INR,netbanking,IDFC First,DECLINED,260,1,5d4dabf515b54377,2026-08-03T12:02:00,failed,card_invalid,0,1
+txn_86a2f1a63c98,41545.88,INR,card,HDFC Bank,NSF,143,1,49cc441702f3f0a6,2026-08-01T13:11:00,failed,insufficient_funds,0,0
+txn_4b0f97b9f1c2,39739.23,INR,upi,,NSF,211,1,c53f4f314f5db16a,2026-08-03T16:57:00,failed,insufficient_funds,0,0
+txn_d5be638c4040,16247.49,INR,netbanking,Axis Bank,RISK_BLOCK,164,1,3d642c935a991fc1,2026-08-01T12:22:00,failed,risk_flag,0,0
+txn_892a8f683a51,21389.64,INR,card,SBI,TIMEOUT,11429,1,e19f9042956806b0,2026-08-03T18:46:00,degraded,issuer_outage,0,0
+txn_621b396a1571,24467.45,INR,netbanking,HDFC Bank,AUTH_FAILED,225,1,e0764f6c5e5e5deb,2026-08-03T20:39:00,failed,authentication_failure,0,0
+txn_c9a113d097a5,35629.34,INR,upi,,TIMEOUT,7102,1,a96e1a099782f06d,2026-08-01T05:59:00,degraded,gateway_timeout,0,0
+txn_e45c00f0a9e6,28191.61,INR,upi,,TIMEOUT,8106,1,98eb036853097b00,2026-08-01T08:27:00,degraded,gateway_timeout,0,0
+txn_6099c5717202,13809.25,INR,netbanking,Axis Bank,TIMEOUT,5363,1,31d44a4d5bc445d2,2026-08-01T07:26:00,degraded,gateway_timeout,0,0
+txn_4e9f2b56e9a1,2558.28,INR,wallet,,TIMEOUT,6901,2,52a4e6d160bab2ce,2026-08-02T22:30:00,degraded,issuer_outage,0,0
+txn_d30addb817eb,13026.02,INR,upi,,TIMEOUT,5109,2,68fd84e4fe538dc1,2026-08-03T09:23:00,degraded,gateway_timeout,0,0
+txn_f9e8d582b309,37451.59,INR,card,Yes Bank,NSF,146,1,20081a01e1a02ebd,2026-08-03T21:13:00,failed,insufficient_funds,0,0
+txn_f1099f2593ae,22875.03,INR,netbanking,IDFC First,TIMEOUT,4050,1,c2b89217c3f688a7,2026-08-02T21:30:00,degraded,gateway_timeout,0,0
+txn_f11a557a17b5,38928.65,INR,card,Axis Bank,UNKNOWN_ERROR,267,1,984a29c954f7491b,2026-08-01T01:09:00,failed,authentication_failure,0,1
+txn_af2b33c80f4a,31370.72,INR,upi,,DECLINED,250,1,2e39c328eb771f4b,2026-08-03T13:33:00,failed,risk_flag,0,1
+txn_adaef4f4e386,20621.72,INR,netbanking,Yes Bank,NSF,201,1,a11b0cb968f77f97,2026-08-03T15:22:00,failed,insufficient_funds,0,0
+txn_9fd87f94a144,22092.08,INR,card,IDFC First,AUTH_FAILED,476,1,b8716b987bd0b818,2026-08-03T20:13:00,failed,authentication_failure,0,0
+txn_579607a14ac7,40918.74,INR,upi,,UNKNOWN_ERROR,8627,2,a550de155f1570d9,2026-08-02T19:20:00,degraded,gateway_timeout,0,1
+txn_e7ed706aee7e,15602.12,INR,card,Kotak Mahindra,NSF,130,3,dfb889c4dae30c43,2026-08-01T09:25:00,failed,insufficient_funds,0,0
+txn_228c8f0b7d66,12557.73,INR,netbanking,IDFC First,DECLINED,325,1,ee75d17d8029fd28,2026-08-02T13:13:00,failed,insufficient_funds,0,1
+txn_e5f84f6cd0e1,29519.25,INR,wallet,,NSF,258,1,dc1c9ba76d03cd40,2026-08-02T14:47:00,failed,insufficient_funds,0,0
+txn_f3aa3b211955,27592.69,INR,wallet,,NSF,202,1,fced675498bf936a,2026-08-01T10:06:00,failed,insufficient_funds,0,0
+txn_c58574c7f7e0,41730.58,INR,wallet,,NSF,350,1,33fdb62171bcf764,2026-08-03T14:28:00,failed,insufficient_funds,0,0
+txn_a270b06e6722,21872.71,INR,netbanking,Kotak Mahindra,TIMEOUT,8451,1,16c0e2ec2d2271a2,2026-08-02T19:56:00,degraded,gateway_timeout,0,0
+txn_566de605a1fe,44884.55,INR,card,Axis Bank,RISK_BLOCK,175,2,2dd456b67d221a1d,2026-08-01T13:43:00,failed,risk_flag,0,0
+txn_3c2001930dc9,23679.96,INR,netbanking,HDFC Bank,TIMEOUT,11820,1,70e755911aa930c8,2026-08-02T07:03:00,degraded,issuer_outage,0,0
+txn_9793fe685306,10015.3,INR,upi,,UNKNOWN_ERROR,8264,1,b290c34ce4e7bce7,2026-08-03T20:58:00,degraded,gateway_timeout,0,1
+txn_891756523464,44838.18,INR,upi,,NSF,394,2,abbdb5bf1f9bef2e,2026-08-03T05:01:00,failed,insufficient_funds,0,0
+txn_c038a53b6c9f,4928.81,INR,card,SBI,,7643,1,39711386db934c80,2026-08-02T12:49:00,degraded,gateway_timeout,0,1
+txn_4179e3019b1e,28078.88,INR,wallet,,TIMEOUT,7016,1,4fcdac53b9005256,2026-08-03T19:21:00,degraded,gateway_timeout,0,0
+txn_c0a699d7fa55,39718.69,INR,upi,,NSF,118,3,eb87a9d4cfea8a20,2026-08-03T06:12:00,failed,insufficient_funds,0,0
+txn_e07e78db6a12,23389.17,INR,upi,,RISK_BLOCK,158,2,49407d9735795b05,2026-08-03T21:42:00,failed,risk_flag,0,0
+txn_06d226988de5,21431.35,INR,card,Yes Bank,TIMEOUT,5112,1,38df61ebd1b960d4,2026-08-03T14:53:00,degraded,gateway_timeout,0,0
+txn_3fd62ce4a07c,9004.18,INR,wallet,,UNKNOWN_ERROR,269,1,cce2864b6c816798,2026-08-02T08:01:00,failed,insufficient_funds,0,1
+txn_8b25f1185e32,36856.44,INR,card,Kotak Mahindra,DECLINED,10388,2,52c9848a6c07ca38,2026-08-02T12:30:00,degraded,issuer_outage,0,1
+txn_f69d6f9f8a69,25318.37,INR,upi,,AUTH_FAILED,324,1,44f42d3732dedd55,2026-08-03T10:43:00,failed,authentication_failure,0,0
+txn_2114f66db712,25779.11,INR,card,Kotak Mahindra,NSF,304,1,d3b67061552662e4,2026-08-03T06:24:00,failed,insufficient_funds,0,0
+txn_4d3a5a4368eb,20941.52,INR,wallet,,UNKNOWN_ERROR,173,2,23eb71ed796ae26a,2026-08-01T15:27:00,failed,risk_flag,0,1
+txn_3f4433e84655,5577.04,INR,upi,,AUTH_FAILED,232,1,16a74e18954bf4b6,2026-08-02T07:25:00,failed,authentication_failure,0,0
+txn_89e1cd80bafa,27012.66,INR,wallet,ICICI Bank,TIMEOUT,5159,1,bd7984fb1f5279fa,2026-08-02T06:00:00,degraded,issuer_outage,1,0
+txn_0a6dc418aefb,42035.04,INR,netbanking,Axis Bank,CARD_EXPIRED,255,2,559607d672cbdb35,2026-08-02T11:27:00,failed,card_invalid,0,0
+txn_6fe4ad98ff74,38058.16,INR,upi,,NETWORK_ERROR,2968,1,3ef8c51d1e4e427f,2026-08-03T00:59:00,failed,network_transient,0,0
+txn_63bf4c634dfa,35776.45,INR,netbanking,Axis Bank,TIMEOUT,6820,3,c4c9008a5530f66b,2026-08-01T01:06:00,degraded,gateway_timeout,0,0
+txn_8c804a1ef04c,34164.6,INR,card,HDFC Bank,,2214,3,ed1205bf8c59cdb4,2026-08-02T00:00:00,failed,network_transient,0,1
+txn_44218864e37b,26558.18,INR,wallet,,DECLINED,3873,1,e6c0dd02ac1ecaec,2026-08-03T20:50:00,degraded,network_transient,0,1
+txn_b290a643e33d,19300.21,INR,netbanking,SBI,NSF,182,2,e9cf718f9da703fc,2026-08-02T13:51:00,failed,insufficient_funds,0,0
+txn_124f88dd3c6a,34375.79,INR,netbanking,Axis Bank,,8205,1,5b5d0c85f06fda5e,2026-08-03T11:43:00,degraded,gateway_timeout,0,1
+txn_34b1ff79002e,13149.17,INR,netbanking,Kotak Mahindra,AUTH_FAILED,244,1,b0ffdf4d431f180f,2026-08-03T11:45:00,failed,authentication_failure,0,0
+txn_0b3c6f2511e4,41162.69,INR,upi,,CARD_EXPIRED,201,2,1f0f4d0bd05c49e1,2026-08-02T19:54:00,failed,card_invalid,0,0
+txn_463abd50aefc,40156.49,INR,upi,,DECLINED,5146,1,e822b8cd98844f38,2026-08-02T09:58:00,degraded,issuer_outage,0,1
+txn_2fc532e20bf8,1532.24,INR,upi,,NETWORK_ERROR,4185,1,7301738061f2710e,2026-08-03T05:23:00,degraded,network_transient,0,0
+txn_015c7cc3c667,989.59,INR,netbanking,IDFC First,NSF,222,1,0ee30e399102b7e1,2026-08-01T08:38:00,failed,insufficient_funds,0,0
+txn_f0f2e686ce3f,5311.57,INR,netbanking,Yes Bank,NETWORK_ERROR,2447,1,c711123eba619feb,2026-08-01T22:26:00,failed,network_transient,0,0
+txn_2ece98b7651c,39181.96,INR,card,SBI,NSF,329,1,6ddc47619049e13b,2026-08-02T19:06:00,failed,insufficient_funds,0,0
+txn_5803b5b1c96b,22586.77,INR,netbanking,HDFC Bank,CARD_EXPIRED,201,2,3058e5731fa7c59c,2026-08-01T05:46:00,failed,card_invalid,0,0
+txn_8f3c7521edb8,18684.15,INR,upi,,AUTH_FAILED,465,1,76c7d2acf349ffb4,2026-08-03T20:03:00,failed,authentication_failure,0,0
+txn_ee1f2d8b05b1,30932.29,INR,upi,,TIMEOUT,7745,3,690d5bfea16c8ea0,2026-08-03T22:45:00,degraded,gateway_timeout,0,0
+txn_442a4ef67b9a,5705.7,INR,card,ICICI Bank,DECLINED,390,1,1fb6c916cd9f1fa4,2026-08-03T12:54:00,failed,authentication_failure,0,1
+txn_3363e3be838f,36748.26,INR,netbanking,Yes Bank,TIMEOUT,10843,1,c1fa53f50bdfb314,2026-08-03T16:57:00,degraded,issuer_outage,0,0
+txn_94a46bc3f661,16488.83,INR,upi,,,327,1,1214af82e981cc5f,2026-08-03T13:17:00,failed,insufficient_funds,0,1
+txn_2a4d1684b094,37014.01,INR,netbanking,Kotak Mahindra,DECLINED,361,1,3640c0c5f7c97a44,2026-08-01T21:07:00,failed,insufficient_funds,0,1
+txn_9f081bc9efca,37442.72,INR,upi,,UNKNOWN_ERROR,191,2,cfa9792e1f0d5e5c,2026-08-02T16:19:00,failed,card_invalid,0,1
+txn_291a95e5199a,15836.73,INR,upi,,DECLINED,332,2,eb0eb349bc0296d5,2026-08-01T12:20:00,failed,authentication_failure,0,1
+txn_2169f97145b6,5459.67,INR,netbanking,IDFC First,TIMEOUT,6192,2,a825648354c8cdb0,2026-08-02T19:30:00,degraded,issuer_outage,0,0
+txn_dc15726b9375,7438.22,INR,netbanking,Kotak Mahindra,AUTH_FAILED,372,1,6698e0d5ddd845c0,2026-08-03T21:35:00,failed,authentication_failure,0,0
+txn_d0a1c8f73538,27777.3,INR,card,IDFC First,CARD_EXPIRED,144,1,31e90075c6df79af,2026-08-02T22:08:00,failed,card_invalid,0,0
+txn_e61d7e235492,25192.02,INR,netbanking,IDFC First,TIMEOUT,7593,2,58ecc48e464df066,2026-08-01T02:54:00,degraded,gateway_timeout,0,0
+txn_15045e6415e2,3670.17,INR,wallet,,NSF,103,2,8c410d12ec9b5a04,2026-08-01T05:46:00,failed,insufficient_funds,0,0
+txn_66c06e14a092,41422.16,INR,upi,,,4289,1,f2d2bc98c247927a,2026-08-03T09:15:00,degraded,gateway_timeout,0,1
+txn_fd27cb402ac6,33221.5,INR,card,SBI,DECLINED,7971,1,4f6daca7ccc78dc2,2026-08-03T21:01:00,degraded,gateway_timeout,0,1
+txn_509b8c8fab37,44929.75,INR,wallet,,NSF,280,2,3853ddbc698d8854,2026-08-02T20:19:00,failed,insufficient_funds,0,0
+txn_0db943e30db4,25321.84,INR,wallet,ICICI Bank,,6805,1,f6a6ca0c7fd27197,2026-08-02T06:00:00,degraded,issuer_outage,1,1
+txn_9e6306fae034,3136.91,INR,netbanking,Yes Bank,TIMEOUT,11980,2,04ed2987181aeabd,2026-08-03T01:10:00,degraded,issuer_outage,0,0
+txn_c74500ede91a,10057.15,INR,card,Axis Bank,DECLINED,6152,1,6551166d08f446ea,2026-08-01T10:37:00,degraded,issuer_outage,0,1
+txn_c66e144698a0,30051.26,INR,card,ICICI Bank,NSF,322,1,5bb89fcfa8ab22d3,2026-08-01T22:51:00,failed,insufficient_funds,0,0
+txn_c2247472610f,13922.77,INR,netbanking,SBI,CARD_EXPIRED,166,1,e25a9430e5944004,2026-08-03T15:19:00,failed,card_invalid,0,0
+txn_6f9340183000,43759.12,INR,netbanking,SBI,,164,2,6eb704474b30e32b,2026-08-01T01:07:00,failed,insufficient_funds,0,1
+txn_75e7dbb46fc0,11958.82,INR,wallet,,TIMEOUT,6157,1,ce9ea335eac8589f,2026-08-02T12:40:00,degraded,gateway_timeout,0,0
+txn_b809f9f06bf5,29860.61,INR,upi,,NSF,221,1,63383347cbf8d83a,2026-08-02T19:00:00,failed,insufficient_funds,0,0
+txn_4b12044c5b59,14100.1,INR,card,SBI,NSF,394,1,e63d81f095ddde98,2026-08-03T03:14:00,failed,insufficient_funds,0,0
+txn_1d9d1a5b791a,12006.42,INR,upi,,NSF,121,1,b962c2e6ee8f6a78,2026-08-03T22:42:00,failed,insufficient_funds,0,0
+txn_5d132e2ca7f0,13502.25,INR,card,Axis Bank,CARD_EXPIRED,167,1,4b077845f791ae8b,2026-08-01T11:52:00,failed,card_invalid,0,0
+txn_4f3dd792ce5c,4075.31,INR,card,ICICI Bank,TIMEOUT,6063,1,ecbf9e99bd973f3c,2026-08-02T07:04:00,degraded,gateway_timeout,0,0
+txn_9e77aaf3daba,4193.94,INR,netbanking,Yes Bank,NSF,386,2,64f23d5ec3932a3f,2026-08-02T23:31:00,failed,insufficient_funds,0,0
+txn_b114117567e7,9686.3,INR,wallet,ICICI Bank,TIMEOUT,8241,2,abf30925f7d29ce3,2026-08-02T06:10:00,degraded,issuer_outage,1,0
+txn_6fb3ebe6866b,21214.89,INR,wallet,,UNKNOWN_ERROR,4380,1,5db272d1a199532f,2026-08-02T20:14:00,degraded,gateway_timeout,0,1
+txn_516b26391ad2,34166.12,INR,card,SBI,NETWORK_ERROR,3928,1,eda9589c0a283c52,2026-08-02T13:28:00,degraded,network_transient,0,0
+txn_65083a172109,35521.22,INR,upi,,TIMEOUT,5883,2,151a99a51b083357,2026-08-03T08:18:00,degraded,gateway_timeout,0,0
+txn_d8fada31f167,36349.7,INR,wallet,ICICI Bank,TIMEOUT,9392,1,4d12b1eb372be4bb,2026-08-02T06:08:00,degraded,issuer_outage,1,0
+txn_3b591cf54832,1877.26,INR,card,Axis Bank,CARD_EXPIRED,216,2,116f16fbb51e78aa,2026-08-01T05:47:00,failed,card_invalid,0,0
+txn_090122d939d1,32391.3,INR,wallet,,DECLINED,11300,1,e0662fd5e699875a,2026-08-01T10:04:00,degraded,issuer_outage,0,1
+txn_186b1c69b468,32115.11,INR,wallet,,CARD_EXPIRED,119,1,92fadab0e4ccf047,2026-08-02T08:49:00,failed,card_invalid,0,0
+txn_f20410c4064e,39064.3,INR,netbanking,Kotak Mahindra,DECLINED,223,1,bf0901ade89ffc00,2026-08-02T09:39:00,failed,card_invalid,0,1
+txn_1abc257c6b8c,1548.12,INR,wallet,,,8376,2,0d6249bc772e3c3f,2026-08-03T05:11:00,degraded,gateway_timeout,0,1
+txn_bbfce70b45b3,21113.15,INR,upi,,AUTH_FAILED,513,2,ac40f3bbab79990f,2026-08-01T08:58:00,failed,authentication_failure,0,0
+txn_0b640c3c20a5,33292.68,INR,wallet,,RISK_BLOCK,244,2,8e2731411f79c07a,2026-08-02T11:40:00,failed,risk_flag,0,0
+txn_82da99e00fd6,24763.68,INR,upi,,CARD_EXPIRED,277,1,b2dc4b8a772c7348,2026-08-01T02:30:00,failed,card_invalid,0,0
+txn_8560839a24b1,12132.69,INR,card,SBI,NETWORK_ERROR,4973,1,1231c782692a812c,2026-08-03T18:51:00,degraded,network_transient,0,0
+txn_9953fa7f14d6,37804.89,INR,card,SBI,TIMEOUT,4011,2,a6f9d65fe8403bae,2026-08-03T03:22:00,degraded,gateway_timeout,0,0
+txn_8e46aeecf2f7,11626.76,INR,upi,,,333,3,73000ae7539fa056,2026-08-02T16:25:00,failed,insufficient_funds,0,1
+txn_cd800361dc45,41435.36,INR,card,Yes Bank,CARD_EXPIRED,135,1,3bd3c43e86f3b579,2026-08-02T20:22:00,failed,card_invalid,0,0
+txn_d2623a3db29e,27969.25,INR,card,IDFC First,CARD_EXPIRED,214,1,eae527101b98d195,2026-08-01T22:49:00,failed,card_invalid,0,0
+txn_f619e7dd40f8,33738.69,INR,wallet,,TIMEOUT,8288,1,4ed91152cda869fa,2026-08-02T18:16:00,degraded,gateway_timeout,0,0
+txn_db54e03876d9,43471.35,INR,netbanking,Kotak Mahindra,TIMEOUT,7183,1,69bb03411ad67fb3,2026-08-01T15:35:00,degraded,gateway_timeout,0,0
+txn_ba9c6a909c78,5189.87,INR,card,ICICI Bank,UNKNOWN_ERROR,4543,3,d4cfd3aca58a76d5,2026-08-02T15:16:00,degraded,network_transient,0,1
+txn_e6ba7686f8e6,5901.83,INR,wallet,,CARD_EXPIRED,222,3,7b935ef809a41539,2026-08-01T04:26:00,failed,card_invalid,0,0
+txn_98bc39173708,14126.94,INR,netbanking,IDFC First,UNKNOWN_ERROR,390,1,46614aa9ed53243f,2026-08-01T07:10:00,failed,insufficient_funds,0,1
+txn_a537cf541c32,17404.46,INR,upi,,NETWORK_ERROR,2761,1,c2eb614390e5edaf,2026-08-01T01:00:00,failed,network_transient,0,0
+txn_c62dd748256b,10422.81,INR,card,ICICI Bank,,11594,1,3adecce1b34101d4,2026-08-02T06:01:00,degraded,issuer_outage,1,1
+txn_d089c852c5b7,32631.12,INR,wallet,,UNKNOWN_ERROR,4282,1,0ae2dad70093cfff,2026-08-03T05:52:00,degraded,network_transient,0,1
+txn_c5b2e0cebbb6,38177.96,INR,netbanking,ICICI Bank,CARD_EXPIRED,232,1,577879d869c3a19f,2026-08-02T01:45:00,failed,card_invalid,0,0
+txn_1eb53aef75a0,32386.67,INR,card,SBI,,158,2,100772ce99f8ed56,2026-08-03T19:57:00,failed,insufficient_funds,0,1
+txn_426ff28d433e,3677.32,INR,netbanking,Yes Bank,UNKNOWN_ERROR,6781,1,1ed400c92b46a412,2026-08-01T22:57:00,degraded,gateway_timeout,0,1
+txn_ee3dc01db082,453.52,INR,wallet,,NSF,270,2,d2d19f7a1dcb317b,2026-08-03T03:52:00,failed,insufficient_funds,0,0
+txn_92a0cdeaa31d,31013.14,INR,wallet,,TIMEOUT,5098,1,9d4f5f60ff5be840,2026-08-03T16:00:00,degraded,gateway_timeout,0,0
+txn_5548610aa075,16232.77,INR,netbanking,ICICI Bank,,271,1,9d55653b590b5a44,2026-08-01T08:08:00,failed,insufficient_funds,0,1
+txn_d6cdcf7d285c,19401.01,INR,card,Yes Bank,UNKNOWN_ERROR,124,1,b5ca03acb865a01a,2026-08-03T17:06:00,failed,card_invalid,0,1
+txn_6068e4812159,24524.6,INR,wallet,,AUTH_FAILED,534,2,9b009d50aaf80c20,2026-08-03T01:56:00,failed,authentication_failure,0,0
+txn_8e8026c5158d,586.09,INR,netbanking,ICICI Bank,,347,1,112b575a76b99a4c,2026-08-02T22:41:00,failed,authentication_failure,0,1
+txn_c5bf0942b546,31896.67,INR,card,ICICI Bank,,134,2,ff2c16b07fedcce7,2026-08-02T21:06:00,failed,insufficient_funds,0,1
+txn_65df3f553676,16872.41,INR,netbanking,Axis Bank,NSF,309,2,961d88d3ae4e04aa,2026-08-01T07:08:00,failed,insufficient_funds,0,0
+txn_f06e7f8adea8,19353.29,INR,upi,,AUTH_FAILED,305,2,7ce72548ddcaeaa2,2026-08-01T08:06:00,failed,authentication_failure,0,0
+txn_0bcf2a560b75,20247.22,INR,wallet,,NETWORK_ERROR,3831,1,5a7c316a89406e69,2026-08-03T19:54:00,degraded,network_transient,0,0
+txn_07c8abe53831,3642.14,INR,netbanking,Kotak Mahindra,DECLINED,7516,1,837231e38d1f21ec,2026-08-03T09:01:00,degraded,gateway_timeout,0,1
+txn_c5e0dafa4544,44744.94,INR,wallet,,RISK_BLOCK,315,1,a4a45cd049373ca3,2026-08-02T15:41:00,failed,risk_flag,0,0
+txn_00f299e9d0db,23458.01,INR,card,IDFC First,NETWORK_ERROR,4868,1,16d05b4f113370d5,2026-08-03T23:20:00,degraded,network_transient,0,0
+txn_c75d0d9dbadc,43753.0,INR,card,SBI,RISK_BLOCK,203,1,af0728db9d334421,2026-08-01T14:02:00,failed,risk_flag,0,0
+txn_3e006765e73c,5797.69,INR,upi,,NSF,135,2,bd006856d587f0af,2026-08-02T04:17:00,failed,insufficient_funds,0,0
+txn_819f81e88e07,37434.6,INR,upi,,NSF,278,1,dc38299691554437,2026-08-03T14:10:00,failed,insufficient_funds,0,0
+txn_f88f35cb1ab5,27689.04,INR,card,ICICI Bank,NETWORK_ERROR,3593,3,8322e5af5e11896f,2026-08-01T00:43:00,degraded,network_transient,0,0
+txn_7f0be822d471,27868.71,INR,wallet,,NETWORK_ERROR,2631,1,36a6545d7dc4aa3c,2026-08-01T22:36:00,failed,network_transient,0,0
+txn_0dfd44e8955c,35461.61,INR,upi,,TIMEOUT,5417,1,536bd00560065249,2026-08-01T10:38:00,degraded,gateway_timeout,0,0
+txn_387b1270a8e6,42985.75,INR,netbanking,Yes Bank,DECLINED,173,1,b9b511a04fd5b8ff,2026-08-02T22:47:00,failed,risk_flag,0,1
+txn_1cebf632150c,42220.37,INR,upi,,NETWORK_ERROR,2840,2,81b0e157754edae0,2026-08-03T14:43:00,failed,network_transient,0,0
+txn_1fd0e0f81a0b,33544.34,INR,netbanking,Axis Bank,AUTH_FAILED,429,3,5999f2cc8add7f3d,2026-08-01T00:01:00,failed,authentication_failure,0,0
+txn_fff4ddb2b1b3,36391.49,INR,netbanking,Axis Bank,NSF,400,1,9d5f4f27de0482a7,2026-08-01T09:01:00,failed,insufficient_funds,0,0
+txn_8d4a77e3a8fa,6192.74,INR,card,Axis Bank,,7584,1,4655ff2adcd58bcd,2026-08-03T18:54:00,degraded,gateway_timeout,0,1
+txn_242a8754100e,14021.42,INR,wallet,,TIMEOUT,6672,1,39630214d6024054,2026-08-02T16:22:00,degraded,gateway_timeout,0,0
+txn_b26c6c081670,33183.2,INR,card,Axis Bank,TIMEOUT,6347,1,796d5bbc34783f64,2026-08-01T19:46:00,degraded,gateway_timeout,0,0
+txn_6ab76bf0269c,12146.1,INR,upi,,TIMEOUT,5154,1,70c997c2c1ebe262,2026-08-02T15:37:00,degraded,gateway_timeout,0,0
+txn_6efb42f1a164,8243.47,INR,netbanking,SBI,TIMEOUT,5840,1,863267615ed95b3a,2026-08-02T16:21:00,degraded,issuer_outage,0,0
+txn_21983219aa09,5926.3,INR,netbanking,HDFC Bank,UNKNOWN_ERROR,4349,3,06e5614a882c6ddf,2026-08-01T06:54:00,degraded,gateway_timeout,0,1
+txn_15b9a5e0c89b,15147.38,INR,wallet,,RISK_BLOCK,256,3,e116979098d7b7b1,2026-08-01T16:27:00,failed,risk_flag,0,0
+txn_449d28b7f176,29862.36,INR,netbanking,Kotak Mahindra,CARD_EXPIRED,255,2,21568dd15add4c39,2026-08-03T09:11:00,failed,card_invalid,0,0
+txn_dcb620bd39d9,35277.73,INR,netbanking,Axis Bank,NSF,115,1,c00017d04e02bb46,2026-08-03T17:23:00,failed,insufficient_funds,0,0
+txn_9cfeee3d3885,34032.95,INR,netbanking,HDFC Bank,TIMEOUT,7526,2,20710b1be7d052b1,2026-08-02T07:34:00,degraded,gateway_timeout,0,0
+txn_5c37686af428,34236.19,INR,wallet,,UNKNOWN_ERROR,239,1,a3aaa76f36c54147,2026-08-03T10:02:00,failed,card_invalid,0,1
+txn_172e3595c670,36214.33,INR,wallet,,NSF,125,1,4a3c9f1989b4e847,2026-08-01T16:34:00,failed,insufficient_funds,0,0
+txn_570bd14f71a0,10680.78,INR,upi,,NSF,298,1,137ce07aeb3a132d,2026-08-03T09:13:00,failed,insufficient_funds,0,0
+txn_f5260d512cd8,2936.28,INR,card,Axis Bank,CARD_EXPIRED,178,1,a96b52dcd629db74,2026-08-03T20:36:00,failed,card_invalid,0,0
+txn_356e663c89e4,10718.41,INR,card,Kotak Mahindra,UNKNOWN_ERROR,148,1,c62fda3435424866,2026-08-03T21:17:00,failed,insufficient_funds,0,1
+txn_e9c5c9503bc8,43103.85,INR,wallet,,AUTH_FAILED,252,2,54d412d727177781,2026-08-02T22:53:00,failed,authentication_failure,0,0
+txn_656b7cbe3a20,17399.09,INR,netbanking,IDFC First,,313,1,507a3f7bde66f110,2026-08-01T17:08:00,failed,insufficient_funds,0,1
+txn_dea06a81d479,40274.49,INR,wallet,,CARD_EXPIRED,186,3,d260bd3f5671f643,2026-08-03T19:44:00,failed,card_invalid,0,0
+txn_1c8d99e4ebde,35332.08,INR,wallet,,AUTH_FAILED,206,1,7984c6c533f68c7d,2026-08-03T04:56:00,failed,authentication_failure,0,0
+txn_87248ef57f21,32643.59,INR,wallet,,AUTH_FAILED,514,1,4119479be0512f5c,2026-08-02T15:06:00,failed,authentication_failure,0,0
+txn_e2f191fcdd05,14002.64,INR,upi,,,274,3,44580b0323cf2a3c,2026-08-03T18:23:00,failed,insufficient_funds,0,1
+txn_9d6e5aea360e,21704.49,INR,netbanking,Kotak Mahindra,NSF,152,2,32eb2c48f9e8a87f,2026-08-03T22:26:00,failed,insufficient_funds,0,0
+txn_4fe6f0c7077d,17411.72,INR,card,HDFC Bank,CARD_EXPIRED,264,3,6412dfa28c17255d,2026-08-03T21:01:00,failed,card_invalid,0,0
+txn_829a3d1ad6c4,20280.64,INR,wallet,,NSF,152,1,70c2fa929ea7a67d,2026-08-03T00:19:00,failed,insufficient_funds,0,0
+txn_1339adc2d042,40123.72,INR,wallet,,CARD_EXPIRED,257,1,52fbed72c9d016aa,2026-08-02T21:22:00,failed,card_invalid,0,0
+txn_34ae52450b66,13700.0,INR,wallet,,NSF,305,1,fe23368cc69f3403,2026-08-02T08:34:00,failed,insufficient_funds,0,0
+txn_071fc18c3cd3,42580.88,INR,card,IDFC First,DECLINED,295,1,059f277811172925,2026-08-03T17:07:00,failed,card_invalid,0,1
+txn_3b05cb447cae,27114.56,INR,card,ICICI Bank,,8483,1,a2d5200155906524,2026-08-02T04:20:00,degraded,gateway_timeout,0,1
+txn_d42252a0c3cb,12482.93,INR,wallet,,RISK_BLOCK,188,1,6d637a685a48d0d6,2026-08-02T09:33:00,failed,risk_flag,0,0
+txn_88d1b8ee4a10,4273.76,INR,upi,,AUTH_FAILED,309,1,20d06aa099ba9f8f,2026-08-02T21:12:00,failed,authentication_failure,0,0
+txn_4a8ae489de5a,6306.69,INR,upi,,CARD_EXPIRED,162,1,00f746837e08f20a,2026-08-02T06:48:00,failed,card_invalid,0,0
+txn_1b7901420eb3,27191.05,INR,card,ICICI Bank,CARD_EXPIRED,294,1,17539393f4f2b505,2026-08-02T05:37:00,failed,card_invalid,0,0
+txn_0a16a92322f2,24763.87,INR,wallet,,NETWORK_ERROR,2455,2,6e99b474fbd5c7dc,2026-08-02T08:26:00,failed,network_transient,0,0
+txn_f83804bf43a5,349.58,INR,upi,,TIMEOUT,5685,1,b1875b40ee212575,2026-08-01T08:32:00,degraded,gateway_timeout,0,0
+txn_deda193764a9,38368.01,INR,wallet,,DECLINED,7881,1,ba59c2bdb6b78022,2026-08-02T02:23:00,degraded,gateway_timeout,0,1
+txn_08f3036b9bde,42328.61,INR,card,ICICI Bank,DECLINED,142,1,dd300b494362d456,2026-08-01T13:02:00,failed,card_invalid,0,1
+txn_0861940ce42e,23292.33,INR,upi,,DECLINED,184,1,dbfd429bcf51aafe,2026-08-03T15:05:00,failed,card_invalid,0,1
+txn_25e3783a8bd2,9561.56,INR,upi,,TIMEOUT,4476,1,a1dba845500666f3,2026-08-01T11:58:00,degraded,gateway_timeout,0,0
+txn_e90680b51935,37610.16,INR,wallet,,UNKNOWN_ERROR,188,3,a705ee2a1e43ac0a,2026-08-03T21:51:00,failed,risk_flag,0,1
+txn_a88bee5328a8,9424.02,INR,upi,,,3022,2,6865763273eead68,2026-08-03T00:36:00,degraded,network_transient,0,1
+txn_937f12d6001b,11869.43,INR,wallet,,AUTH_FAILED,489,1,2cfb7fb675ca0cf3,2026-08-02T13:37:00,failed,authentication_failure,0,0
+txn_c9518781f41d,36900.92,INR,netbanking,Axis Bank,TIMEOUT,4005,2,8156bff52eb01c90,2026-08-03T21:04:00,degraded,gateway_timeout,0,0
+txn_25a2d31217f0,20418.0,INR,netbanking,ICICI Bank,NSF,368,1,14a422faafeccd57,2026-08-01T15:19:00,failed,insufficient_funds,0,0
+txn_786334a6520c,17987.56,INR,wallet,,NETWORK_ERROR,2867,1,1af62579101d0600,2026-08-02T20:04:00,failed,network_transient,0,0
+txn_39bb6a3415f4,28878.1,INR,upi,,TIMEOUT,6273,1,c66c84f8d9d2f28b,2026-08-01T10:47:00,degraded,gateway_timeout,0,0
+txn_a07c574d4aab,12355.22,INR,wallet,,UNKNOWN_ERROR,296,1,f4e16e13d6c4c00f,2026-08-01T20:46:00,failed,authentication_failure,0,1
+txn_25284cccd943,39043.43,INR,card,Kotak Mahindra,CARD_EXPIRED,140,1,32cdee81c29c1127,2026-08-03T21:11:00,failed,card_invalid,0,0
+txn_45f920bfc305,8259.29,INR,card,SBI,NSF,143,3,10c7ded6cfd3264a,2026-08-01T21:02:00,failed,insufficient_funds,0,0
+txn_e831999ff7d8,18334.72,INR,card,Yes Bank,AUTH_FAILED,572,1,7a6e0b9688436589,2026-08-02T14:42:00,failed,authentication_failure,0,0
+txn_f143a1519675,33742.79,INR,netbanking,HDFC Bank,NSF,104,1,1bf340e94a1331ed,2026-08-01T14:39:00,failed,insufficient_funds,0,0
+txn_f2636b9e9f0a,2127.29,INR,netbanking,IDFC First,DECLINED,2535,1,a88d1197dcb18333,2026-08-02T11:45:00,failed,network_transient,0,1
+txn_8ff6dd4837ad,5345.24,INR,netbanking,HDFC Bank,NETWORK_ERROR,4814,2,6b3c6a6571eec0cd,2026-08-01T11:53:00,degraded,network_transient,0,0
+txn_e72d3729e195,25890.39,INR,netbanking,Axis Bank,CARD_EXPIRED,180,1,36c0cb98de28619c,2026-08-02T10:04:00,failed,card_invalid,0,0
+txn_5d298f0f952a,18011.05,INR,netbanking,SBI,NSF,351,3,e45cde1392de82e2,2026-08-02T09:05:00,failed,insufficient_funds,0,0
+txn_2b1d34a7d268,9281.34,INR,netbanking,Kotak Mahindra,DECLINED,225,1,8d3899866abb38c9,2026-08-01T06:56:00,failed,card_invalid,0,1
+txn_78eb1c0217b0,9465.08,INR,wallet,,TIMEOUT,6708,1,6b3513b75340a969,2026-08-01T01:44:00,degraded,gateway_timeout,0,0
+txn_cdef3d10f43f,37796.12,INR,netbanking,SBI,TIMEOUT,10606,1,fe4bea14ae0c17bb,2026-08-01T08:42:00,degraded,issuer_outage,0,0
+txn_df86ffc72032,42892.78,INR,netbanking,ICICI Bank,NSF,290,1,9023ba4a5df908d6,2026-08-02T12:41:00,failed,insufficient_funds,0,0
+txn_ff9ac9b7c501,722.76,INR,card,HDFC Bank,,7120,1,3bad95e54de3152c,2026-08-01T07:43:00,degraded,gateway_timeout,0,1
+txn_fafafb56334d,28764.26,INR,upi,,UNKNOWN_ERROR,4367,3,04f5c045ffc34fae,2026-08-02T07:21:00,degraded,network_transient,0,1
+txn_1d08366f9d03,10299.35,INR,upi,,DECLINED,3862,3,e3b00f0c2448f21b,2026-08-01T00:38:00,degraded,network_transient,0,1
+txn_0982f1e2cb34,38443.89,INR,upi,,DECLINED,213,1,d9861df41abf6265,2026-08-02T04:13:00,failed,insufficient_funds,0,1
+txn_4dc622c58e89,42892.26,INR,wallet,,AUTH_FAILED,562,1,d2d5d4fe8fa60a25,2026-08-02T15:46:00,failed,authentication_failure,0,0
+txn_75407afb13ad,19331.76,INR,card,HDFC Bank,AUTH_FAILED,238,3,c615c9840fb821df,2026-08-01T20:21:00,failed,authentication_failure,0,0
+txn_62148c20b877,32790.37,INR,card,Kotak Mahindra,UNKNOWN_ERROR,5850,1,54f03caf89fbdf31,2026-08-03T17:49:00,degraded,gateway_timeout,0,1
+txn_c678db32039c,27352.69,INR,wallet,,NSF,346,1,b124712ac1c7be53,2026-08-03T08:05:00,failed,insufficient_funds,0,0
+txn_039192128506,20465.9,INR,netbanking,Axis Bank,DECLINED,257,1,dae87032540d2470,2026-08-02T02:42:00,failed,card_invalid,0,1
+txn_42d2baa53541,35865.39,INR,card,SBI,AUTH_FAILED,459,1,0533f2a97cc70345,2026-08-03T15:02:00,failed,authentication_failure,0,0
+txn_0493c9881716,39383.3,INR,upi,,NSF,163,1,3a7acfcd4e174b0d,2026-08-03T05:48:00,failed,insufficient_funds,0,0
+txn_f5ccfbb49281,23021.35,INR,netbanking,SBI,,175,1,08d2bd9fba201972,2026-08-01T19:59:00,failed,insufficient_funds,0,1
+txn_a55cedecb733,13387.09,INR,netbanking,IDFC First,,5943,1,7a62c011066bb489,2026-08-01T10:16:00,degraded,issuer_outage,0,1
+txn_49d519017d4d,10455.03,INR,wallet,,RISK_BLOCK,219,1,9175fdd234e7213d,2026-08-01T10:09:00,failed,risk_flag,0,0
+txn_2e087fa15d6c,36416.78,INR,wallet,,TIMEOUT,5589,1,8585ad2b6de2e849,2026-08-03T12:09:00,degraded,gateway_timeout,0,0
+txn_a5fa437911ec,30547.74,INR,upi,,AUTH_FAILED,521,1,c88fba33a77afe9a,2026-08-01T05:22:00,failed,authentication_failure,0,0
+txn_8ee1e6aeb171,21225.57,INR,card,ICICI Bank,,173,2,c946a14d78ed99be,2026-08-03T13:59:00,failed,card_invalid,0,1
+txn_e5105e9470a9,11438.73,INR,upi,,NSF,353,1,68364bf7fdaf08d9,2026-08-02T02:41:00,failed,insufficient_funds,0,0
+txn_8b96f5c3e145,9191.36,INR,upi,,NSF,121,1,7cc31045cce3ca4a,2026-08-02T18:20:00,failed,insufficient_funds,0,0
+txn_ea01745fbf36,4846.92,INR,netbanking,ICICI Bank,NSF,292,1,ccb8802b2a39b181,2026-08-01T10:14:00,failed,insufficient_funds,0,0
+txn_052a32ebf55c,2586.51,INR,netbanking,IDFC First,NETWORK_ERROR,2475,1,70f962cc73a80958,2026-08-03T15:21:00,failed,network_transient,0,0
+txn_9edc8aadd4d5,9279.59,INR,upi,,UNKNOWN_ERROR,173,1,cbd43be3f788b2cc,2026-08-03T18:10:00,failed,card_invalid,0,1
+txn_68eb640743c9,10138.39,INR,wallet,,NSF,306,2,689bb21acb59f03e,2026-08-01T10:45:00,failed,insufficient_funds,0,0
+txn_eb17b904dc08,17321.02,INR,card,Kotak Mahindra,TIMEOUT,5256,1,70e11fb009e358da,2026-08-03T02:38:00,degraded,gateway_timeout,0,0
+txn_44f33f3fb547,13346.47,INR,wallet,,NSF,224,1,3c2c7333ae87bcdf,2026-08-03T02:23:00,failed,insufficient_funds,0,0
+txn_4bb30ad2d7ca,44218.14,INR,upi,,NETWORK_ERROR,2811,2,341e16b30e30fb85,2026-08-03T02:49:00,failed,network_transient,0,0
+txn_061c6bb32567,18670.71,INR,wallet,,UNKNOWN_ERROR,160,1,5a82e5a70ce415ff,2026-08-01T22:50:00,failed,card_invalid,0,1
+txn_ee4392665211,8279.54,INR,wallet,,CARD_EXPIRED,299,1,04515371b1851d02,2026-08-01T03:56:00,failed,card_invalid,0,0
+txn_440e63328427,35396.11,INR,netbanking,HDFC Bank,TIMEOUT,8619,1,e598f15519b05e29,2026-08-02T00:33:00,degraded,gateway_timeout,0,0
+txn_f32e5f0bdfbb,31514.12,INR,upi,,TIMEOUT,4821,1,29c629c530b6ab48,2026-08-03T06:41:00,degraded,gateway_timeout,0,0
+txn_93a75777c056,34872.62,INR,wallet,,AUTH_FAILED,576,1,920d5c8c7b9ac70f,2026-08-01T16:15:00,failed,authentication_failure,0,0
+txn_9d89e9afe1e0,43739.18,INR,upi,ICICI Bank,TIMEOUT,9158,2,c53a02da17f10cd1,2026-08-02T06:08:00,degraded,issuer_outage,1,0
+txn_9a46e9d520f2,10599.99,INR,upi,,NETWORK_ERROR,4441,1,83899c6d69b37fa5,2026-08-01T19:45:00,degraded,network_transient,0,0
+txn_5e96ea11fcfa,17248.46,INR,card,Axis Bank,NETWORK_ERROR,2548,1,435d9090acffc8d4,2026-08-02T07:44:00,failed,network_transient,0,0
+txn_45c27ac56a90,8828.41,INR,wallet,,NSF,330,1,72f2dd800fadacd4,2026-08-02T17:44:00,failed,insufficient_funds,0,0
+txn_ea05bbb2ba7a,40716.67,INR,upi,,TIMEOUT,4326,1,a528cc330bf12996,2026-08-02T19:49:00,degraded,gateway_timeout,0,0
+txn_a377c74bb55d,28660.45,INR,netbanking,ICICI Bank,DECLINED,6332,1,1e72229fa7ec33a3,2026-08-02T06:14:00,degraded,issuer_outage,1,1
+txn_f6ce67e2367b,42911.24,INR,upi,,UNKNOWN_ERROR,4474,1,6a7f6e8caac8e157,2026-08-03T11:19:00,degraded,gateway_timeout,0,1
+txn_c301a5d091bc,39742.62,INR,wallet,,,4499,1,c35567629920e4fe,2026-08-03T04:17:00,degraded,gateway_timeout,0,1
+txn_c5056e5b53c9,14726.89,INR,wallet,,TIMEOUT,5737,1,438d13a56b6f9d2e,2026-08-02T11:16:00,degraded,gateway_timeout,0,0
+txn_117d3e02775e,9091.33,INR,card,Kotak Mahindra,TIMEOUT,6248,1,2028d8cec6c36140,2026-08-03T16:39:00,degraded,issuer_outage,0,0
+txn_142ce226fbca,24504.93,INR,card,ICICI Bank,TIMEOUT,6576,1,b154caadf28374e3,2026-08-02T04:17:00,degraded,gateway_timeout,0,0
+txn_c5d3e40110f2,44886.49,INR,netbanking,Axis Bank,AUTH_FAILED,407,1,93946636b8e81268,2026-08-01T04:49:00,failed,authentication_failure,0,0
+txn_2aeb119ad750,28891.61,INR,netbanking,IDFC First,CARD_EXPIRED,192,1,3846e3141b1a971c,2026-08-02T21:16:00,failed,card_invalid,0,0
+txn_110abc9bb7db,28930.0,INR,wallet,,UNKNOWN_ERROR,8775,1,50e91795af131476,2026-08-03T00:05:00,degraded,issuer_outage,0,1
+txn_52dc180169a7,8193.59,INR,card,Axis Bank,RISK_BLOCK,167,2,b22bb448af88359a,2026-08-02T14:32:00,failed,risk_flag,0,0
+txn_5304325c5d47,26919.07,INR,upi,,DECLINED,365,3,fc45b87a1a2a2117,2026-08-02T15:57:00,failed,authentication_failure,0,1
+txn_798bc5a71a97,15629.29,INR,upi,,TIMEOUT,6379,1,ed76631eeff14650,2026-08-01T10:47:00,degraded,gateway_timeout,0,0
+txn_8984f04cad70,29493.56,INR,wallet,,RISK_BLOCK,223,1,e46688e8f4e575a5,2026-08-01T14:40:00,failed,risk_flag,0,0
+txn_e88f12cbe807,9890.89,INR,wallet,,NSF,259,2,51862537a982c281,2026-08-03T20:02:00,failed,insufficient_funds,0,0
+txn_3054d37f1b66,33503.6,INR,upi,,NSF,326,2,5ce358053e911036,2026-08-03T02:12:00,failed,insufficient_funds,0,0
+txn_2301923e025f,35872.41,INR,card,HDFC Bank,UNKNOWN_ERROR,179,2,ec1e5e752fde4285,2026-08-03T01:33:00,failed,risk_flag,0,1
+txn_61b10bbbf587,16681.07,INR,netbanking,Kotak Mahindra,,295,2,9a28dbb3b79f77e1,2026-08-03T02:43:00,failed,insufficient_funds,0,1
+txn_62cd91098e72,15987.78,INR,wallet,,UNKNOWN_ERROR,203,1,eb122ff6930f4f16,2026-08-03T22:41:00,failed,card_invalid,0,1
+txn_8160e3f9b90e,41765.74,INR,wallet,,NSF,191,1,46b33db8fea425e6,2026-08-01T18:37:00,failed,insufficient_funds,0,0
+txn_61ed58f6296e,34839.7,INR,upi,,NSF,173,1,961d96c090d3732c,2026-08-01T01:09:00,failed,insufficient_funds,0,0
+txn_7efe1914dbe0,22446.89,INR,upi,,NSF,132,2,dd93368e0dd69341,2026-08-03T10:11:00,failed,insufficient_funds,0,0
+txn_6cbbf8e08f95,43895.53,INR,upi,,NETWORK_ERROR,3517,1,fd6aa07df643ba7e,2026-08-01T14:29:00,degraded,network_transient,0,0
+txn_73028b41d220,9073.27,INR,upi,,TIMEOUT,11392,1,cd469dda6dbe34af,2026-08-02T20:23:00,degraded,issuer_outage,0,0
+txn_be068a2347dc,19233.85,INR,netbanking,SBI,,559,1,2befd68617e01c3a,2026-08-02T17:51:00,failed,authentication_failure,0,1
+txn_9fc6e098c44f,2842.63,INR,netbanking,Axis Bank,DECLINED,261,1,780697fcd93f531e,2026-08-02T21:41:00,failed,card_invalid,0,1
+txn_87cd0d71b8fa,31461.55,INR,netbanking,ICICI Bank,TIMEOUT,7276,1,526037fee9a7523b,2026-08-02T06:05:00,degraded,issuer_outage,1,0
+txn_521a4b581985,22916.87,INR,card,Axis Bank,NETWORK_ERROR,3925,1,4e31c81068343d19,2026-08-03T04:49:00,degraded,network_transient,0,0
+txn_9c5a3fc6af57,25084.53,INR,upi,,,2387,1,4199e644aa025ed6,2026-08-01T19:05:00,failed,network_transient,0,1
+txn_ebadb34c288f,38691.88,INR,netbanking,Axis Bank,UNKNOWN_ERROR,464,1,095449f8ff5d4734,2026-08-01T12:04:00,failed,authentication_failure,0,1
+txn_fc36e517247b,37898.87,INR,upi,ICICI Bank,UNKNOWN_ERROR,6252,1,be8ceda5ec5d3c08,2026-08-02T06:09:00,degraded,issuer_outage,1,1
+txn_68e886bd0371,4168.32,INR,wallet,,RISK_BLOCK,258,1,759c2f4a99c7caf1,2026-08-02T02:00:00,failed,risk_flag,0,0
+txn_defc8de9ed8c,37131.25,INR,upi,,UNKNOWN_ERROR,273,1,b8289d85c788916c,2026-08-03T08:35:00,failed,insufficient_funds,0,1
+txn_3023da3a073d,16105.06,INR,card,Yes Bank,DECLINED,253,1,681d79b6f889413e,2026-08-01T23:44:00,failed,insufficient_funds,0,1
+txn_578e456d6d9f,14618.75,INR,upi,,TIMEOUT,7578,2,ffbcf30fdd66970c,2026-08-03T18:31:00,degraded,gateway_timeout,0,0
+txn_0e6c9be7b874,6077.37,INR,netbanking,Kotak Mahindra,DECLINED,356,2,0bd111f6edfc5277,2026-08-01T22:27:00,failed,insufficient_funds,0,1
+txn_78958cfba711,20857.18,INR,card,SBI,NSF,294,1,1e6536af32fd28d3,2026-08-03T14:04:00,failed,insufficient_funds,0,0
+txn_d8b08c8931f5,16219.19,INR,upi,,NSF,331,1,862ca8dd50025124,2026-08-02T12:10:00,failed,insufficient_funds,0,0
+txn_d28031e3c205,15404.2,INR,wallet,,,368,1,8ecfdb314f2a84fd,2026-08-02T20:41:00,failed,insufficient_funds,0,1
+txn_96e83dc3b98b,39067.22,INR,wallet,,TIMEOUT,7949,2,4ff7cc0e7fb63a0f,2026-08-01T00:54:00,degraded,gateway_timeout,0,0
+txn_343b9a23669e,9925.71,INR,netbanking,IDFC First,AUTH_FAILED,388,1,e6e539f3a8a8a71f,2026-08-01T15:38:00,failed,authentication_failure,0,0
+txn_199fb1934092,15900.77,INR,upi,,NSF,177,2,fe82551631a171ac,2026-08-03T12:24:00,failed,insufficient_funds,0,0
+txn_5ebe52da9227,41600.96,INR,upi,,TIMEOUT,5635,1,af65a9ec559489be,2026-08-01T21:17:00,degraded,gateway_timeout,0,0
+txn_3ec6704fa265,40040.62,INR,netbanking,Kotak Mahindra,AUTH_FAILED,328,1,7285c2c24b24a229,2026-08-02T07:15:00,failed,authentication_failure,0,0
+txn_939f278831b2,16450.7,INR,upi,,NSF,269,2,77f60461d4e4bc6e,2026-08-02T20:20:00,failed,insufficient_funds,0,0
+txn_1c3ca6e8c4c6,23235.41,INR,wallet,,TIMEOUT,6527,1,f3964ef6add4c033,2026-08-01T12:17:00,degraded,gateway_timeout,0,0
+txn_21da812b6737,8607.41,INR,wallet,,AUTH_FAILED,402,1,7730fd072d4f8844,2026-08-03T05:12:00,failed,authentication_failure,0,0
+txn_a48666bc06c9,25204.59,INR,netbanking,SBI,AUTH_FAILED,259,2,df4ae6f14aafc2d7,2026-08-02T11:11:00,failed,authentication_failure,0,0
+txn_8b9475514ce8,29427.15,INR,card,Yes Bank,UNKNOWN_ERROR,295,1,00fbe45de5a5ac15,2026-08-03T23:35:00,failed,insufficient_funds,0,1
+txn_1e4d76c8b965,18360.56,INR,wallet,,CARD_EXPIRED,239,1,6e4d3a09d37ada18,2026-08-01T23:40:00,failed,card_invalid,0,0
+txn_b59d9ec659ea,22832.12,INR,netbanking,HDFC Bank,UNKNOWN_ERROR,347,1,1d5c5e01cfa10008,2026-08-01T02:08:00,failed,insufficient_funds,0,1
+txn_936abe0ace59,11750.54,INR,upi,,NSF,271,1,5c520d2e44e753d9,2026-08-02T06:20:00,failed,insufficient_funds,0,0
+txn_ae87825343e4,41568.78,INR,wallet,,AUTH_FAILED,478,1,93928b7b5b9d6be3,2026-08-03T01:05:00,failed,authentication_failure,0,0
+txn_07e277e3eb14,11574.3,INR,wallet,,AUTH_FAILED,200,1,1ab783d0253be130,2026-08-02T02:54:00,failed,authentication_failure,0,0
+txn_231577dfc56d,12029.88,INR,upi,ICICI Bank,UNKNOWN_ERROR,11102,1,6695cb7baec22a3b,2026-08-02T06:04:00,degraded,issuer_outage,1,1
+txn_1da4088f8198,30647.23,INR,card,HDFC Bank,NSF,275,2,ad6a8c58e2b71152,2026-08-03T09:39:00,failed,insufficient_funds,0,0
+txn_079d25ec0b73,37678.16,INR,card,Kotak Mahindra,CARD_EXPIRED,252,1,08c985e3bbfd5ce3,2026-08-01T13:19:00,failed,card_invalid,0,0
+txn_b1248f555a38,31635.08,INR,wallet,,NSF,390,1,5f64947e569de5ac,2026-08-02T19:26:00,failed,insufficient_funds,0,0
+txn_8de52bde5584,5813.64,INR,wallet,,CARD_EXPIRED,126,2,f8c9631d813bd57c,2026-08-02T14:49:00,failed,card_invalid,0,0
+txn_542d9cc254a0,14298.2,INR,card,ICICI Bank,NSF,201,1,f19a36f38fc67bb6,2026-08-03T14:31:00,failed,insufficient_funds,0,0
+txn_4a663c70b49e,44012.6,INR,upi,,UNKNOWN_ERROR,2525,1,40b4a0127e966863,2026-08-01T22:32:00,failed,network_transient,0,1
+txn_93778c0778f7,30829.58,INR,upi,,AUTH_FAILED,270,1,1316b00051d2b680,2026-08-03T23:31:00,failed,authentication_failure,0,0
+txn_311d5799cf99,13934.08,INR,card,Axis Bank,NSF,187,2,2a37248142ef29aa,2026-08-01T08:43:00,failed,insufficient_funds,0,0
+txn_40e18ce11cfd,33451.61,INR,wallet,,DECLINED,2438,1,ebae58c61096df06,2026-08-02T02:44:00,failed,network_transient,0,1
+txn_f525dc882d81,39053.36,INR,wallet,,NSF,218,3,820e49a9a363f8f4,2026-08-03T21:25:00,failed,insufficient_funds,0,0
+txn_3e08d26551db,32640.72,INR,wallet,,,4241,1,43cc45c6e4c3dce0,2026-08-03T10:15:00,degraded,gateway_timeout,0,1
+txn_7009075c589b,19261.31,INR,wallet,,AUTH_FAILED,379,1,968b200476a84a64,2026-08-03T00:08:00,failed,authentication_failure,0,0
+txn_4a70f84406e5,6861.46,INR,card,HDFC Bank,NSF,388,2,9a05cf8e562d47bf,2026-08-02T15:03:00,failed,insufficient_funds,0,0
+txn_1c1cba6f8b5e,8223.02,INR,wallet,,NSF,145,1,ada014fc67f678ec,2026-08-02T17:07:00,failed,insufficient_funds,0,0
+txn_2d35d1d2737a,6513.08,INR,card,HDFC Bank,TIMEOUT,8345,1,2eb2900b31524c6d,2026-08-03T09:19:00,degraded,gateway_timeout,0,0
+txn_5b39d942ac3c,13245.46,INR,netbanking,Yes Bank,TIMEOUT,5870,1,eb1fa040b6fafd89,2026-08-01T22:24:00,degraded,issuer_outage,0,0
+txn_f425bbb8d240,15322.78,INR,card,Axis Bank,CARD_EXPIRED,269,2,33cfc57bfc5808e1,2026-08-03T17:47:00,failed,card_invalid,0,0
+txn_c99355f61406,26275.55,INR,upi,,NETWORK_ERROR,3760,1,c98c13da6ba40ae2,2026-08-02T18:05:00,degraded,network_transient,0,0
+txn_412f64d68bff,17408.19,INR,wallet,,UNKNOWN_ERROR,163,2,605fa7f0e538d017,2026-08-01T04:34:00,failed,card_invalid,0,1
+txn_57d0a50fac6e,21505.54,INR,netbanking,Kotak Mahindra,TIMEOUT,7644,1,f643f9ba382c08fe,2026-08-02T00:10:00,degraded,gateway_timeout,0,0
+txn_78c68298329e,18244.27,INR,card,Kotak Mahindra,NSF,381,1,07d6b627398c2b26,2026-08-01T12:24:00,failed,insufficient_funds,0,0
+txn_80cb9c6118a2,31763.98,INR,card,Kotak Mahindra,UNKNOWN_ERROR,446,3,7578799255fe9488,2026-08-01T10:55:00,failed,authentication_failure,0,1
+txn_c8393013cb4c,13416.28,INR,card,Kotak Mahindra,DECLINED,376,2,53a16adcb48b2628,2026-08-03T23:53:00,failed,insufficient_funds,0,1
+txn_c3711c68bbab,8509.45,INR,wallet,,AUTH_FAILED,402,1,948ea019726a4382,2026-08-02T02:56:00,failed,authentication_failure,0,0
+txn_2e07188d658f,25049.7,INR,card,ICICI Bank,,247,1,c118a1ee0af78199,2026-08-03T00:16:00,failed,card_invalid,0,1
+txn_06bb6a106e77,5503.02,INR,card,Axis Bank,DECLINED,171,1,aa3db76991cdce18,2026-08-01T17:45:00,failed,card_invalid,0,1
+txn_8a63b69d9d6c,23596.8,INR,netbanking,ICICI Bank,,542,2,261557b19b9a8eda,2026-08-02T08:35:00,failed,authentication_failure,0,1
+txn_cbd13ed91fff,37587.37,INR,wallet,,NSF,224,1,90fef8cf9ce87c1a,2026-08-01T19:44:00,failed,insufficient_funds,0,0
+txn_1cc0aa150fe0,32111.65,INR,upi,,AUTH_FAILED,432,1,01ca0d41228f9b1a,2026-08-02T20:14:00,failed,authentication_failure,0,0
+txn_bca5d0c3c370,34677.37,INR,card,Yes Bank,,225,1,e1249bff21bbf22c,2026-08-02T06:09:00,failed,risk_flag,0,1
+txn_e0e450b3b28c,19127.29,INR,wallet,,NSF,137,1,6b7e8ea9b32afe6f,2026-08-03T17:25:00,failed,insufficient_funds,0,0
+txn_fda3fc941fae,12700.16,INR,card,ICICI Bank,NSF,366,1,0942cd6028825cd2,2026-08-03T02:51:00,failed,insufficient_funds,0,0
+txn_3a8674d944dc,5985.68,INR,card,Kotak Mahindra,TIMEOUT,8600,1,fe63a766ce062b0c,2026-08-01T16:41:00,degraded,gateway_timeout,0,0
+txn_6a91a4acef53,7797.47,INR,wallet,,UNKNOWN_ERROR,275,2,3027bc004900124e,2026-08-02T09:04:00,failed,authentication_failure,0,1
+txn_56b715c4ec02,39523.53,INR,netbanking,Axis Bank,DECLINED,317,1,804277964956cf56,2026-08-03T16:35:00,failed,risk_flag,0,1
+txn_ca6394f8ecb2,15401.82,INR,wallet,,NETWORK_ERROR,3187,1,5bb0fd51dfa2b932,2026-08-02T00:06:00,degraded,network_transient,0,0
+txn_641976fb64d2,2907.48,INR,upi,,AUTH_FAILED,271,2,d5bfe8ce59950de5,2026-08-01T00:01:00,failed,authentication_failure,0,0
+txn_4bdbe57f6edf,44794.71,INR,wallet,,TIMEOUT,6268,1,7a40a3438b1638fa,2026-08-02T05:43:00,degraded,issuer_outage,0,0
+txn_b6b463992cd7,9118.02,INR,upi,,DECLINED,4602,1,b126afc7464408dd,2026-08-03T18:08:00,degraded,gateway_timeout,0,1
+txn_3237175fd0ac,40213.18,INR,netbanking,IDFC First,NSF,349,1,b387e53079ec4360,2026-08-01T06:30:00,failed,insufficient_funds,0,0
+txn_01ef75299743,4242.22,INR,netbanking,Axis Bank,TIMEOUT,6730,1,fcee1217137ef7d0,2026-08-01T14:16:00,degraded,gateway_timeout,0,0
+txn_8f431f951f28,26872.28,INR,card,Kotak Mahindra,UNKNOWN_ERROR,214,1,2e1706bfcc5407d4,2026-08-03T01:23:00,failed,card_invalid,0,1
+txn_8a3e46d5bc70,13379.78,INR,upi,,NETWORK_ERROR,3220,1,835439d196a0b548,2026-08-03T02:56:00,degraded,network_transient,0,0
+txn_b35ebb6e365c,32768.45,INR,upi,,NETWORK_ERROR,3978,3,9e546ceca0e368af,2026-08-01T15:25:00,degraded,network_transient,0,0
+txn_a2fb119f3be1,29295.17,INR,netbanking,IDFC First,CARD_EXPIRED,272,2,1472e684d3465a0c,2026-08-03T03:53:00,failed,card_invalid,0,0
+txn_6522587ac692,16262.12,INR,netbanking,IDFC First,NETWORK_ERROR,2127,1,7e419bb80ca0dfaa,2026-08-03T05:49:00,failed,network_transient,0,0
+txn_339a30a1c924,27211.91,INR,upi,,,350,1,dc3536c5a50bed11,2026-08-01T10:10:00,failed,authentication_failure,0,1
+txn_3b135bb1775e,4451.83,INR,wallet,,DECLINED,8683,1,9dc41dd9a13de636,2026-08-03T19:01:00,degraded,gateway_timeout,0,1
+txn_8a409cdb6044,9285.66,INR,wallet,,DECLINED,5464,1,447db4f1405524b8,2026-08-03T18:02:00,degraded,gateway_timeout,0,1
+txn_2c041b5c15a6,22903.07,INR,upi,,DECLINED,268,2,64e59c239638f69f,2026-08-02T00:43:00,failed,card_invalid,0,1
+txn_8a5b26bb436b,29941.06,INR,netbanking,Kotak Mahindra,NSF,260,1,7409b4e9b9157fb0,2026-08-01T17:00:00,failed,insufficient_funds,0,0
+txn_d6b2389c140a,16239.56,INR,netbanking,Axis Bank,TIMEOUT,8519,1,2bde6f66bef36f6e,2026-08-01T11:11:00,degraded,gateway_timeout,0,0
+txn_4c3dfa03b21e,27469.53,INR,upi,ICICI Bank,DECLINED,9375,2,0e9b0e93c838bd58,2026-08-02T06:02:00,degraded,issuer_outage,1,1
+txn_eb7e1802f472,19793.57,INR,upi,,RISK_BLOCK,185,1,39b2f8c8057f36ee,2026-08-01T03:27:00,failed,risk_flag,0,0
+txn_1f99761a5511,20460.13,INR,upi,,UNKNOWN_ERROR,6131,1,150dc777c106181b,2026-08-03T21:56:00,degraded,issuer_outage,0,1
+txn_085293fbb892,18074.43,INR,upi,,TIMEOUT,4045,2,3b56f6bf340fdc4b,2026-08-01T14:33:00,degraded,gateway_timeout,0,0
+txn_b72e254bb704,12587.41,INR,wallet,,DECLINED,4567,1,4f1fb0dd79f3a696,2026-08-03T12:03:00,degraded,network_transient,0,1
