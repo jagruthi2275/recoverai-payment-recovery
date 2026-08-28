@@ -21,7 +21,6 @@ import csv
 import hashlib
 import random
 import sqlite3
-import uuid
 from datetime import datetime, timedelta
 
 SEED = 42
@@ -38,6 +37,16 @@ CSV_PATH = os.path.join(_ROOT, "data", "transactions.csv")
 
 ISSUERS = ["HDFC Bank", "ICICI Bank", "SBI", "Axis Bank", "Kotak Mahindra", "Yes Bank", "IDFC First"]
 PAYMENT_METHODS = ["card", "upi", "netbanking", "wallet"]
+
+
+def make_id(prefix: str, n_hex_chars: int = 12) -> str:
+    """
+    Deterministic, seed-driven ID generator. uuid.uuid4() deliberately NOT
+    used here — it draws from os.urandom, not Python's random module, so it
+    ignores random.seed() and breaks reproducibility (SPEC §12/§20).
+    """
+    return prefix + "".join(random.choices("0123456789abcdef", k=n_hex_chars))
+
 
 # root_cause -> (weight, failure_code, typical_latency_ms_range)
 ROOT_CAUSE_PROFILES = {
@@ -68,7 +77,7 @@ def make_transaction(base_time: datetime, forced_cause: str = None, forced_issue
     true_cause = forced_cause or random.choices(CAUSES, weights=WEIGHTS, k=1)[0]
     profile = ROOT_CAUSE_PROFILES[true_cause]
 
-    txn_id = f"txn_{uuid.uuid4().hex[:12]}"
+    txn_id = make_id("txn_")
     amount = round(random.uniform(150, 45000), 2)
     method = random.choice(PAYMENT_METHODS)
     issuer = forced_issuer or (random.choice(ISSUERS) if method in ("card", "netbanking") else None)
@@ -95,7 +104,7 @@ def make_transaction(base_time: datetime, forced_cause: str = None, forced_issue
         "failure_code": failure_code,
         "gateway_response_ms": latency,
         "attempt_count": attempt_count,
-        "customer_id_hash": hash_customer_id(f"cust_{uuid.uuid4().hex[:8]}"),
+        "customer_id_hash": hash_customer_id(make_id("cust_", 8)),
         "created_at": ts.isoformat(),
         "status": "degraded" if latency > 3000 else "failed",
         "true_root_cause": true_cause,

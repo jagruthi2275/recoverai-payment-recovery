@@ -11,6 +11,7 @@ Usage:
 import json
 import random
 import sqlite3
+import time
 from datetime import datetime, timedelta, timezone
 
 from diagnosis_rules import diagnose_by_rule
@@ -46,13 +47,21 @@ def detect_at_risk(transactions: list) -> list:
 
 
 def diagnose(transaction: dict, outage_flagged_ids: set, llm_client) -> dict:
-    """Runs the transaction through Layer A, falling back to Layer C
-    (informed by Layer B's outage context) if rules can't resolve it."""
-    rule_result = diagnose_by_rule(transaction)
-    if rule_result is not None:
-        return rule_result
-
+    """
+    Runs the transaction through Layer A (rules), UNLESS Layer B has flagged
+    it as part of a detected issuer-outage window — in that case it bypasses
+    the static rule lookup entirely and goes to Layer C, since a systemic
+    pattern is stronger evidence than a single transaction's failure code.
+    (Fixed per error-analysis finding: rule-resolved TIMEOUT codes were
+    silently misclassifying real issuer-outage transactions as ordinary
+    gateway_timeout, because Layer A never checked Layer B's context.)
+    """
     in_outage_window = transaction["transaction_id"] in outage_flagged_ids
+
+    if not in_outage_window:
+        rule_result = diagnose_by_rule(transaction)
+        if rule_result is not None:
+            return rule_result
     return diagnose_by_llm(transaction, in_outage_window, client=llm_client)
 
 
@@ -82,6 +91,7 @@ def run_pipeline():
     outage_flagged_ids = attach_outage_context(at_risk, outage_windows)
 
     llm_client = get_llm_client()
+    print(f"[DEBUG] Active LLM client: {type(llm_client).__name__}")
     executed_keys = set()
 
     now = datetime.now(timezone.utc)
@@ -90,12 +100,16 @@ def run_pipeline():
     llm_calls = 0
     rule_calls = 0
 
-    for t in at_risk:
+    for idx, t in enumerate(at_risk):
+        if idx % 50 == 0:
+            print(f"[PROGRESS] {idx}/{len(at_risk)} transactions processed...")
+
         diagnosis = diagnose(t, outage_flagged_ids, llm_client)
         if diagnosis["diagnosis_method"] == "rule_engine":
             rule_calls += 1
         else:
             llm_calls += 1
+            time.sleep(0.3)  # gentle pacing to stay under Groq's free-tier TPM limit
 
         cur.execute("""
             INSERT INTO diagnoses (transaction_id, diagnosis_method, predicted_root_cause,
