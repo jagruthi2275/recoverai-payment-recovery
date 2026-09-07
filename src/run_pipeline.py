@@ -1,63 +1,47 @@
-"""
-RecoverAI — pipeline orchestrator.
-
-Runs the full loop per SPEC §6: Detection -> Diagnosis -> Decision ->
-Guardrails -> Idempotency -> Simulated Execution -> Audit Log -> Metrics.
-
-Usage:
-    python3 src/run_pipeline.py
-"""
+"""RecoverAI pipeline orchestrator and reusable controlled-batch service."""
 
 import json
+import os
 import random
 import sqlite3
 import time
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
 
-from diagnosis_rules import diagnose_by_rule
-from diagnosis_pattern import detect_issuer_outage_windows, attach_outage_context
-from diagnosis_llm import diagnose_by_llm, get_llm_client
-from guardrails import evaluate_guardrails, make_idempotency_key
+try:  # Package imports for FastAPI; fallback keeps direct CLI execution working.
+    from .database import DEFAULT_DB_PATH, get_connection
+    from .diagnosis_llm import diagnose_by_llm, get_llm_client
+    from .diagnosis_pattern import attach_outage_context, detect_issuer_outage_windows
+    from .diagnosis_rules import diagnose_by_rule
+    from .guardrails import evaluate_guardrails
+    from .agents import RecoveryOrchestrator
+except ImportError:  # pragma: no cover - exercised by direct script execution
+    from database import DEFAULT_DB_PATH, get_connection
+    from diagnosis_llm import diagnose_by_llm, get_llm_client
+    from diagnosis_pattern import attach_outage_context, detect_issuer_outage_windows
+    from diagnosis_rules import diagnose_by_rule
+    from guardrails import evaluate_guardrails
+    from agents import RecoveryOrchestrator
 
-import os
-_SRC_DIR = os.path.dirname(os.path.abspath(__file__))
-DB_PATH = os.path.join(_SRC_DIR, "..", "db", "recoverai.db")
+DB_PATH = DEFAULT_DB_PATH
 SEED = 42
 random.seed(SEED)
 
-# outcome probabilities per (root_cause, action) — used by the execution
-# simulator (SPEC §12). Deterministic given the fixed seed.
 RECOVERY_PROBABILITIES = {
-    ("gateway_timeout", "retry"):                  0.80,
-    ("network_transient", "retry"):                0.75,
-    ("insufficient_funds", "delayed_retry"):        0.55,
-    ("authentication_failure", "recovery_link"):     0.65,
-    ("card_invalid", "alt_payment_method"):           0.60,
-    ("issuer_outage", "delayed_retry"):                0.50,
+    ("gateway_timeout", "retry"): 0.80,
+    ("network_transient", "retry"): 0.75,
+    ("insufficient_funds", "delayed_retry"): 0.55,
+    ("authentication_failure", "recovery_link"): 0.65,
+    ("card_invalid", "alt_payment_method"): 0.60,
+    ("issuer_outage", "delayed_retry"): 0.50,
 }
-DEFAULT_ESCALATE_STOP_RECOVERY = 0.0  # escalate/stop never auto-recover
 
 
 def detect_at_risk(transactions: list) -> list:
-    """Detection layer (SPEC §7) — all rows in this batch are already
-    failed/degraded transactions by construction; a real system would
-    filter a mixed stream here. Kept explicit as its own step for clarity
-    and so it's the natural place to add future filtering logic."""
     return [t for t in transactions if t["status"] in ("failed", "degraded")]
 
 
 def diagnose(transaction: dict, outage_flagged_ids: set, llm_client) -> dict:
-    """
-    Runs the transaction through Layer A (rules), UNLESS Layer B has flagged
-    it as part of a detected issuer-outage window — in that case it bypasses
-    the static rule lookup entirely and goes to Layer C, since a systemic
-    pattern is stronger evidence than a single transaction's failure code.
-    (Fixed per error-analysis finding: rule-resolved TIMEOUT codes were
-    silently misclassifying real issuer-outage transactions as ordinary
-    gateway_timeout, because Layer A never checked Layer B's context.)
-    """
     in_outage_window = transaction["transaction_id"] in outage_flagged_ids
-
     if not in_outage_window:
         rule_result = diagnose_by_rule(transaction)
         if rule_result is not None:
@@ -66,108 +50,97 @@ def diagnose(transaction: dict, outage_flagged_ids: set, llm_client) -> dict:
 
 
 def simulate_execution(root_cause: str, action: str) -> tuple:
-    """Returns (outcome, recovered_amount_fraction) — deterministic given seed."""
     if action in ("escalate", "stop"):
-        return "escalated" if action == "escalate" else "stopped", 0.0
+        return ("escalated" if action == "escalate" else "stopped"), 0.0
+    return ("recovered", 1.0) if random.random() < RECOVERY_PROBABILITIES.get((root_cause, action), 0.5) else ("failed", 0.0)
 
-    prob = RECOVERY_PROBABILITIES.get((root_cause, action), 0.5)
-    if random.random() < prob:
-        return "recovered", 1.0
-    return "failed", 0.0
+
+def process_batch(conn, transactions: list | None = None, llm_client=None,
+                  pace_llm_calls: bool = False) -> dict:
+    """Process a supplied controlled batch using the agentic RecoveryOrchestrator.
+
+    The caller owns ``conn``. Reprocessing a previously executed final action
+    is idempotent: the existing action is returned in ``duplicates`` and no
+    action/audit/escalation row is added.
+    """
+    conn.row_factory = sqlite3.Row
+    cur = conn.cursor()
+    if transactions is None:
+        transactions = [dict(row) for row in cur.execute("SELECT * FROM transactions")]
+    else:
+        transactions = [dict(transaction) for transaction in transactions]
+
+    at_risk = detect_at_risk(transactions)
+    outage_windows = detect_issuer_outage_windows(at_risk)
+    outage_flagged_ids = attach_outage_context(at_risk, outage_windows)
+    llm_client = llm_client or get_llm_client()
+    orchestrator = RecoveryOrchestrator(llm_client=llm_client)
+
+    executed_keys = set()
+    stats = {"recovered": 0, "failed": 0, "escalated": 0, "stopped": 0}
+    result = {
+        "input_transactions": len(transactions),
+        "at_risk_transactions": len(at_risk),
+        "processed_transactions": 0,
+        "duplicate_actions": 0,
+        "outcomes": stats,
+        "recovered_amount": 0.0,
+        "rule_diagnoses": 0,
+        "llm_diagnoses": 0,
+        "outage_windows": outage_windows,
+        "duplicates": [],
+    }
+
+    for transaction in at_risk:
+        res = orchestrator.process_transaction(
+            conn=conn,
+            transaction=transaction,
+            outage_flagged_ids=outage_flagged_ids,
+            executed_keys=executed_keys,
+        )
+
+        diag_method = res["diagnosis"]["diagnosis_method"]
+        if diag_method == "rule_engine":
+            result["rule_diagnoses"] += 1
+        else:
+            result["llm_diagnoses"] += 1
+            if pace_llm_calls:
+                time.sleep(0.3)
+
+        if res["status"] == "duplicate":
+            result["duplicate_actions"] += 1
+            if res.get("idempotency_key"):
+                result["duplicates"].append({
+                    "transaction_id": transaction["transaction_id"],
+                    "idempotency_key": res["idempotency_key"],
+                    "existing_action": res.get("existing_action"),
+                })
+            continue
+
+        result["processed_transactions"] += 1
+        outcome = res["outcome"]
+        stats[outcome] += 1
+        result["recovered_amount"] += res["recovered_amount"]
+
+    conn.commit()
+    result["recovered_amount"] = round(result["recovered_amount"], 2)
+    return result
 
 
 def run_pipeline():
-    conn = sqlite3.connect(DB_PATH)
-    conn.row_factory = sqlite3.Row
-    cur = conn.cursor()
-
-    cur.execute("SELECT * FROM transactions")
-    transactions = [dict(row) for row in cur.fetchall()]
-
-    at_risk = detect_at_risk(transactions)
-
-    # Layer B: pattern detection runs once across the whole batch
-    outage_windows = detect_issuer_outage_windows(at_risk)
-    outage_flagged_ids = attach_outage_context(at_risk, outage_windows)
-
-    llm_client = get_llm_client()
-    print(f"[DEBUG] Active LLM client: {type(llm_client).__name__}")
-    executed_keys = set()
-
-    now = datetime.now(timezone.utc)
-    stats = {"recovered": 0, "failed": 0, "escalated": 0, "stopped": 0}
-    total_recovered_amount = 0.0
-    llm_calls = 0
-    rule_calls = 0
-
-    for idx, t in enumerate(at_risk):
-        if idx % 50 == 0:
-            print(f"[PROGRESS] {idx}/{len(at_risk)} transactions processed...")
-
-        diagnosis = diagnose(t, outage_flagged_ids, llm_client)
-        if diagnosis["diagnosis_method"] == "rule_engine":
-            rule_calls += 1
-        else:
-            llm_calls += 1
-            time.sleep(0.3)  # gentle pacing to stay under Groq's free-tier TPM limit
-
-        cur.execute("""
-            INSERT INTO diagnoses (transaction_id, diagnosis_method, predicted_root_cause,
-                                    confidence, reasoning, recommended_action, diagnosed_at)
-            VALUES (?, ?, ?, ?, ?, ?, ?)
-        """, (t["transaction_id"], diagnosis["diagnosis_method"], diagnosis["predicted_root_cause"],
-              diagnosis["confidence"], diagnosis["reasoning"], diagnosis["recommended_action"],
-              now.isoformat()))
-        diagnosis_id = cur.lastrowid
-
-        decision = evaluate_guardrails(t, diagnosis, executed_keys)
-        final_action = decision["final_action"]
-
-        if final_action in ("escalate", "stop") and decision.get("idempotency_key") is None:
-            idem_key = make_idempotency_key(t["transaction_id"], final_action, t["attempt_count"])
-        else:
-            idem_key = decision.get("idempotency_key") or make_idempotency_key(
-                t["transaction_id"], final_action, t["attempt_count"])
-        executed_keys.add(idem_key)
-
-        outcome, recovered_fraction = simulate_execution(diagnosis["predicted_root_cause"], final_action)
-        recovered_amount = round(t["amount"] * recovered_fraction, 2)
-        total_recovered_amount += recovered_amount
-        stats[outcome] = stats.get(outcome, 0) + 1
-
-        cur.execute("""
-            INSERT INTO recovery_actions (transaction_id, diagnosis_id, action_type, attempt_number,
-                                           idempotency_key, policy_checks_passed, executed_at,
-                                           outcome, recovered_amount)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-        """, (t["transaction_id"], diagnosis_id, final_action, t["attempt_count"], idem_key,
-              json.dumps(decision["checks"]), now.isoformat(), outcome, recovered_amount))
-
-        cur.execute("""
-            INSERT INTO audit_log (transaction_id, timestamp, event_type, from_state, to_state, detail)
-            VALUES (?, ?, 'state_transition', 'DETECTED', ?, ?)
-        """, (t["transaction_id"], now.isoformat(), outcome.upper(),
-              json.dumps({"diagnosis": diagnosis, "decision": decision, "outcome": outcome})))
-
-        if final_action == "escalate":
-            cur.execute("""
-                INSERT INTO escalation_queue (transaction_id, diagnosis_id, amount, reason, escalated_at)
-                VALUES (?, ?, ?, ?, ?)
-            """, (t["transaction_id"], diagnosis_id, t["amount"],
-                  decision["escalation_reason"] or "low_confidence", now.isoformat()))
-
-    conn.commit()
-
-    print(f"Processed {len(at_risk)} at-risk transactions")
-    print(f"Diagnosis calls -> rules: {rule_calls} ({rule_calls/len(at_risk):.1%}), "
-          f"LLM: {llm_calls} ({llm_calls/len(at_risk):.1%})")
-    print(f"Detected issuer outage windows: {len(outage_windows)}")
-    for w in outage_windows:
-        print(f"  {w['issuer']}: {w['count']} failures between {w['window_start']} and {w['window_end']}")
-    print(f"\nOutcomes: {stats}")
-    print(f"Total revenue recovered: ₹{total_recovered_amount:,.2f}")
-
-    conn.close()
+    """Preserve the existing command-line entry point."""
+    conn = get_connection(DB_PATH)
+    try:
+        result = process_batch(conn, pace_llm_calls=True)
+    finally:
+        conn.close()
+    print(f"Processed {result['processed_transactions']} of {result['at_risk_transactions']} at-risk transactions")
+    print(f"Skipped existing actions: {result['duplicate_actions']}")
+    print(f"Diagnosis calls -> rules: {result['rule_diagnoses']}, LLM: {result['llm_diagnoses']}")
+    print(f"Detected issuer outage windows: {len(result['outage_windows'])}")
+    print(f"Outcomes: {result['outcomes']}")
+    print(f"Total revenue recovered: INR {result['recovered_amount']:,.2f}")
+    return result
 
 
 if __name__ == "__main__":
