@@ -1,6 +1,7 @@
 """Read-only FastAPI interface for RecoverAI operational data."""
 
 import json
+import os
 import sqlite3
 from contextlib import contextmanager
 from typing import Iterator
@@ -84,9 +85,16 @@ def create_app(db_path: str | None = None) -> FastAPI:
     """Create an API app bound to a SQLite database without mutating it."""
     active_db_path = db_path or DEFAULT_DB_PATH
     app = FastAPI(title="RecoverAI API", version="1.0.0", description="Read-only RecoverAI V1 API")
+
+    raw_origins = os.environ.get("ALLOWED_ORIGINS", "")
+    if raw_origins.strip():
+        origins = [o.strip() for o in raw_origins.split(",") if o.strip()]
+    else:
+        origins = ["http://localhost:3000", "http://127.0.0.1:3000"]
+
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=["http://localhost:3000", "http://127.0.0.1:3000"],
+        allow_origins=origins,
         allow_credentials=False,
         allow_methods=["GET"],
         allow_headers=["*"],
