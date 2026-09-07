@@ -53,6 +53,51 @@ lower confidence (below 0.7) rather than guessing — a low-confidence diagnosis
 is safely escalated to a human, which is the correct outcome when unsure."""
 
 
+VALID_ROOT_CAUSES = frozenset({
+    "insufficient_funds", "gateway_timeout", "authentication_failure",
+    "card_invalid", "network_transient", "issuer_outage", "risk_flag",
+})
+VALID_ACTIONS = frozenset({
+    "retry", "delayed_retry", "recovery_link", "alt_payment_method", "escalate", "stop",
+})
+
+
+def safe_escalation_result(reason: str) -> dict:
+    """Return a guardrail-compatible diagnosis that cannot auto-execute."""
+    return {
+        "root_cause": "authentication_failure",
+        "confidence": 0.0,
+        "reasoning": f"LLM output rejected: {reason}",
+        "recommended_action": "escalate",
+    }
+
+
+def validate_llm_result(result: object) -> dict:
+    """Strictly validate untrusted model output and fail closed on any defect."""
+    if not isinstance(result, dict):
+        return safe_escalation_result("response must be a JSON object")
+    root_cause = result.get("root_cause")
+    action = result.get("recommended_action")
+    confidence = result.get("confidence")
+    reasoning = result.get("reasoning")
+    if root_cause not in VALID_ROOT_CAUSES:
+        return safe_escalation_result("root_cause is missing or unsupported")
+    if action not in VALID_ACTIONS:
+        return safe_escalation_result("recommended_action is missing or unsupported")
+    if isinstance(confidence, bool) or not isinstance(confidence, (int, float)):
+        return safe_escalation_result("confidence must be numeric")
+    if not 0.0 <= float(confidence) <= 1.0:
+        return safe_escalation_result("confidence must be between 0 and 1")
+    if not isinstance(reasoning, str) or not reasoning.strip():
+        return safe_escalation_result("reasoning is required")
+    return {
+        "root_cause": root_cause,
+        "confidence": float(confidence),
+        "reasoning": reasoning.strip(),
+        "recommended_action": action,
+    }
+
+
 def build_user_prompt(transaction: dict, in_outage_window: bool) -> str:
     """
     Minimal context only — no raw customer PII (customer_id is already
@@ -157,7 +202,11 @@ def get_llm_client():
 
 def diagnose_by_llm(transaction: dict, in_outage_window: bool, client=None) -> dict:
     client = client or get_llm_client()
-    result = client.diagnose(transaction, in_outage_window)
+    try:
+        result = client.diagnose(transaction, in_outage_window)
+    except Exception as exc:
+        result = safe_escalation_result(f"client failure ({type(exc).__name__})")
+    result = validate_llm_result(result)
 
     return {
         "diagnosis_method": "llm_reasoning",
